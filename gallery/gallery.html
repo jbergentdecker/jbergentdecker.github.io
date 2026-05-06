@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- FILTER BAR -->
+    <section id="filters">
+        <div class="filter-group">
+            <span class="filter-label">Activity</span>
+            <button class="filter-btn active" data-type="activity" data-filter="all">All</button>
+            <button class="filter-btn" data-type="activity" data-filter="hiking">Hiking</button>
+            <button class="filter-btn" data-type="activity" data-filter="climbing">Climbing</button>
+            <button class="filter-btn" data-type="activity" data-filter="skiing">Skiing</button>
+        </div>
+
+        <div class="filter-group">
+            <span class="filter-label">Season</span>
+            <button class="filter-btn active" data-type="season" data-filter="all">All</button>
+            <button class="filter-btn" data-type="season" data-filter="spring">Spring</button>
+            <button class="filter-btn" data-type="season" data-filter="summer">Summer</button>
+            <button class="filter-btn" data-type="season" data-filter="autumn">Autumn</button>
+            <button class="filter-btn" data-type="season" data-filter="winter">Winter</button>
+        </div>
+    </section>
+
+
+    <!-- PHOTO GRID -->
+    <main id="gallery-grid">
+        <!-- Populated by gallery.js -->
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="hidden">
+        <button id="lb-close">✕</button>
+        <button id="lb-prev">‹</button>
+        <button id="lb-next">›</button>
+        <img id="lb-img" src="" alt="" />
+        <p id="lb-description"></p>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script src="js/gallery.js"></script>
+    <script src="../assets/js/footer.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+</body>
+
+</html>

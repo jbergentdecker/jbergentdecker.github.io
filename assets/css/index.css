@@ -1,0 +1,400 @@
+/* ============================================
+   index.css — Landing page specific styles
+   ============================================ */
+
+/* ---------- Hero ---------- */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* Subtle Ken Burns effect */
+    animation: kenburns 20s ease-in-out infinite alternate;
+}
+
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(26, 26, 26, 0.3) 0%,
+            rgba(26, 26, 26, 0.5) 60%,
+            rgba(26, 26, 26, 0.95) 100%);
+}
+
+.hero__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 0 1.5rem;
+    animation: fadeUp 1.2s ease forwards;
+}
+
+.hero__eyebrow {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.2rem;
+}
+
+.hero__title {
+    font-size: clamp(3rem, 9vw, 7rem);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.hero__title span {
+    color: var(--accent);
+}
+
+.hero__subtitle {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: var(--text-secondary);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 3rem;
+}
+
+/* Scroll indicator */
+.hero__scroll {
+    display: block;
+    width: 28px;
+    height: 44px;
+    border: 2px solid rgba(240, 240, 240, 0.4);
+    border-radius: 999px;
+    margin: 0 auto;
+    position: relative;
+    transition: var(--transition);
+}
+
+.hero__scroll:hover {
+    border-color: var(--accent);
+}
+
+.hero__scroll span {
+    display: block;
+    width: 4px;
+    height: 8px;
+    background: var(--text-primary);
+    border-radius: 999px;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrollBounce 1.8s ease infinite;
+}
+
+/* ---------- About ---------- */
+.about__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.about__label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.8rem;
+}
+
+.about__text p {
+    margin-top: 0.5rem;
+}
+
+.about__stats {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.about__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.about__stat-number {
+    font-family: var(--font-title);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+}
+
+.about__stat-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+/* About images collage */
+.about__images {
+    position: relative;
+    height: 520px;
+}
+
+.about__img-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 85%;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.about__img-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__img-secondary {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 55%;
+    height: 50%;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 4px solid var(--bg-primary);
+    box-shadow: var(--shadow);
+}
+
+.about__img-secondary img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------- Showcase ---------- */
+.showcase {
+    background: var(--bg-surface);
+}
+
+.showcase__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+}
+
+.showcase__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    aspect-ratio: 4/3;
+    cursor: pointer;
+}
+
+.showcase__item--large {
+    grid-column: span 2;
+    grid-row: span 2;
+    aspect-ratio: unset;
+}
+
+.showcase__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.showcase__item:hover img {
+    transform: scale(1.06);
+}
+
+.showcase__item-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 26, 26, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.showcase__item-overlay span {
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: var(--transition);
+}
+
+.showcase__item:hover .showcase__item-overlay {
+    background: rgba(26, 26, 26, 0.5);
+}
+
+.showcase__item:hover .showcase__item-overlay span {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- Tours Teaser ---------- */
+.tours-teaser__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.tour-card__img-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.tour-card__badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+}
+
+.tour-card__title {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.tour-card__meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.tour-card__stats {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.tour-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.tour-stat__value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.tour-stat__label {
+    font-size: 0.72rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+/* ---------- Section CTA ---------- */
+.section-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* ---------- Animations ---------- */
+@keyframes kenburns {
+    0% {
+        transform: scale(1) translateX(0) translateY(0);
+    }
+
+    100% {
+        transform: scale(1.08) translateX(-1%) translateY(-1%);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scrollBounce {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: translateX(-50%) translateY(10px);
+    }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+    .about__grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about__images {
+        height: 380px;
+    }
+
+    .tours-teaser__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .showcase__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showcase__item--large {
+        grid-column: span 2;
+        aspect-ratio: 16/9;
+    }
+
+    .tours-teaser__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about__stats {
+        gap: 1.5rem;
+    }
+}

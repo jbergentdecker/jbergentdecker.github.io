@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tours</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="css/tours.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- HEADER -->
+    <header class="tours-header">
+        <h1>Our Tours</h1>
+        <p>Explore our mountain adventures</p>
+    </header>
+
+    <!-- FILTERS -->
+    <section class="tours-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hiking">Hiking</button>
+        <button class="filter-btn" data-filter="mountaineering">Mountaineering</button>
+        <button class="filter-btn" data-filter="climbing">Climbing</button>
+        <button class="filter-btn" data-filter="skitouring">Ski Touring</button>
+        <button class="filter-btn" data-filter="snowshoeing">Snowshoeing</button>
+        <button class="filter-btn" data-filter="trailrunning">Trail Running</button>
+        <button class="filter-btn" data-filter="cycling">Cycling</button>
+    </section>
+
+    <!-- TOUR CARDS GRID -->
+    <main class="tours-grid" id="tours-grid">
+        <!-- Cards injected by tours.js -->
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/main.js"></script>
+    
+    <script src="js/tours.js"></script>
+    <script src="../assets/js/footer.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+</body>
+
+</html>

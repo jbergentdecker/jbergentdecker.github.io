@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "src": "1.jpg",
+        "thumb": "1.jpg",
+        "alt": "Sunrise on the Zugspitze",
+        "location": "Zugspitze",
+        "season": "summer",
+        "activity": "hiking",
+        "date": "2024-07-14",
+        "description": "Golden hour from the summit of the Zugspitze."
+    },
+    {
+        "id": 2,
+        "src": "2.jpg",
+        "thumb": "2.jpg",
+        "alt": "Ice climbing in the Berchtesgaden Alps",
+        "location": "Berchtesgaden",
+        "season": "winter",
+        "activity": "climbing",
+        "date": "2024-01-20",
+        "description": "Frozen waterfall route, grade WI4."
+    },
+    {
+        "id": 3,
+        "src": "3.jpg",
+        "thumb": "3.jpg",
+        "alt": "Ski touring in the Stubai Alps",
+        "location": "Stubai",
+        "season": "winter",
+        "activity": "skitouring",
+        "date": "2024-02-10",
+        "description": "Perfect powder day on the Stubaier Wildspitze approach."
+    },
+    {
+        "id": 4,
+        "src": "4.jpg",
+        "thumb": "4.jpg",
+        "alt": "Autumn hike in the Karwendel",
+        "location": "Karwendel",
+        "season": "autumn",
+        "activity": "hiking",
+        "date": "2023-10-05",
+        "description": "Larch forests turning golden in the Karwendel range."
+    },
+    {
+        "id": 5,
+        "src": "5.jpg",
+        "thumb": "5.jpg",
+        "alt": "Rock climbing in the Dolomites",
+        "location": "Dolomites",
+        "season": "summer",
+        "activity": "climbing",
+        "date": "2024-08-03",
+        "description": "Multi-pitch route on the Tre Cime di Lavaredo."
+    },
+    {
+        "id": 6,
+        "src": "6.jpg",
+        "thumb": "6.jpg",
+        "alt": "Spring snowshoeing in the Allgäu",
+        "location": "Allgäu",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2024-03-28",
+        "description": "Late season snow still covering the Allgäu foothills."
+    }
+]

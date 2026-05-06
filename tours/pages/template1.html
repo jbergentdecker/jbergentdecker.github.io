@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css" />
+    <title>Großglockner</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../css/tour.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <!-- ========== HERO ========== -->
+    <section class="tour-hero">
+        <div class="tour-hero__overlay">
+            <span class="badge">Hiking</span>
+            <h1 class="tour-hero__title">Großglockner via Normalweg</h1>
+            <p class="tour-hero__sub">📍 Hohe Tauern, Austria &nbsp;|&nbsp; 📅 July 2024</p>
+        </div>
+    </section>
+
+    <!-- ========== STATS BAR ========== -->
+    <section class="tour-stats">
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">📏</span>
+            <span class="tour-stats__value">14.2 km</span>
+            <span class="tour-stats__label">Distance</span>
+        </div>
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">⬆️</span>
+            <span class="tour-stats__value">1,850 m</span>
+            <span class="tour-stats__label">Elevation Gain</span>
+        </div>
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">⬇️</span>
+            <span class="tour-stats__value">1,850 m</span>
+            <span class="tour-stats__label">Elevation Loss</span>
+        </div>
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">🏔️</span>
+            <span class="tour-stats__value">3,798 m</span>
+            <span class="tour-stats__label">Summit</span>
+        </div>
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">⏱️</span>
+            <span class="tour-stats__value">8 h</span>
+            <span class="tour-stats__label">Duration</span>
+        </div>
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">💪</span>
+            <span class="tour-stats__value">T5</span>
+            <span class="tour-stats__label">Difficulty</span>
+        </div>
+    </section>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="tour-main container">
+        <div class="tour-layout">
+
+            <!-- LEFT: Description -->
+            <article class="tour-description">
+
+                <h2>About this Tour</h2>
+                <p>
+                    The Großglockner (3,798 m) is the highest peak in Austria and one of the most iconic summits
+                    in the Eastern Alps. This route follows the classic Normalweg from the Lucknerhaus, passing
+                    through the Lucknerhütte and the Stüdlhütte before tackling the glacier section to the summit.
+                </p>
+
+                <img src="../../assets/images/placeholder-1.jpg" alt="View from the ridge"
+                    class="tour-description__img" />
+
+                <h2>Route Description</h2>
+                <p>
+                    Starting from the Lucknerhaus (1,918 m), the trail climbs steadily through alpine meadows
+                    toward the Lucknerhütte (2,241 m). From there, the terrain becomes rockier as you gain
+                    altitude toward the Stüdlhütte (3,060 m), a good place to rest before the glacier.
+                </p>
+                <p>
+                    The glacier crossing requires crampons and an ice axe. Fixed ropes assist on the steepest
+                    sections near the Glocknerleitl. The final ridge to the summit is exposed but well-marked.
+                    The views from the top stretch across the Hohe Tauern in all directions.
+                </p>
+
+                <img src="../../assets/images/placeholder-2.jpg" alt="Glacier approach" class="tour-description__img" />
+
+                <h2>Practical Info</h2>
+                <ul class="tour-info-list">
+                    <li><strong>Start / End:</strong> Lucknerhaus, Kals am Großglockner</li>
+                    <li><strong>Best season:</strong> July – September</li>
+                    <li><strong>Gear:</strong> Crampons, ice axe, helmet, harness</li>
+                    <li><strong>Overnight:</strong> Stüdlhütte (recommended for early summit start)</li>
+                    <li><strong>Permit:</strong> None required</li>
+                </ul>
+
+                <h2>Gallery</h2>
+                <div class="tour-gallery">
+                    <a href="../../assets/images/gallery/6.jpg" class="glightbox" data-gallery="tour">
+                        <img src="../../assets/images/gallery/6.jpg" alt="Summit view" />
+                    </a>
+                    <a href="../../assets/images/gallery/5.jpg" class="glightbox" data-gallery="tour">
+                        <img src="../../assets/images/gallery/5.jpg" alt="Ridge view" />
+                    </a>
+                </div>
+
+
+            </article>
+
+            <!-- RIGHT: Sidebar -->
+            <aside class="tour-sidebar">
+
+                <div class="tour-sidebar__card">
+                    <h3>Quick Facts</h3>
+                    <ul>
+                        <li><strong>Region:</strong> Hohe Tauern, Austria</li>
+                        <li><strong>Date:</strong> 14 July 2024</li>
+                        <li><strong>Type:</strong> Summit hike / glacier</li>
+                        <li><strong>Difficulty:</strong> T5 / ZS</li>
+                        <li><strong>Group size:</strong> 3</li>
+                    </ul>
+                </div>
+
+                <div class="tour-sidebar__card">
+                    <h3>Route Map</h3>
+
+                    <!-- Static preview, click to load interactive map -->
+                    <div id="map-container">
+                        <img id="map-preview" src="../../assets/gpx/template1.gpx" alt="Click to load interactive map"
+                            class="map-preview" onclick="loadMap()" title="Click to open interactive map" />
+                    </div>
+
+                    <div id="tour-map" style="display:none;"></div>
+                </div>
+
+                <div class="tour-sidebar__card">
+                    <div id="elevation-wrapper">
+                        <p class="elevation-loading">Elevation Profile</p>
+                        <canvas id="elevation-chart"></canvas>
+                    </div>
+                </div>
+
+                <div class="tour-sidebar__card">
+                    <h3>Download</h3>
+                    <a href="../../assets/gpx/template1.gpx" class="btn btn-outline" download>
+                        ⬇️ Download GPX
+                    </a>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="../../assets/js/i18n.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/footer.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
+    <script>
+        GLightbox({ selector: '.glightbox' });
+    </script>
+
+
+    <!-- ========== MAP ========== -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+    <script>
+        let mapLoaded = false;
+
+        function loadMap() {
+            if (mapLoaded) return;
+            mapLoaded = true;
+
+            // Hide preview
+            document.getElementById('map-container').style.display = 'none';
+            const mapDiv = document.getElementById('tour-map');
+            mapDiv.style.display = 'block';
+
+            // Init map
+            const map = L.map('tour-map').setView([47.0742, 12.6947], 12);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Load GPX — replace with your actual file
+            new L.GPX('../../assets/gpx/template1.gpx', {
+                async: true,
+                marker_options: {
+                    startIconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-icon-start.png',
+                    endIconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-icon-end.png',
+                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-shadow.png',
+                },
+                polyline_options: {
+                    color: '#2a9d8f',
+                    weight: 3,
+                    opacity: 0.9
+                }
+            })
+                .on('loaded', function (e) {
+                    map.fitBounds(e.target.getBounds());
+                })
+                .addTo(map);
+        }
+    </script>
+
+    <!-- ========== ELEVATION PROFILE ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // ── Parse GPX and draw elevation profile ──────────
+        async function loadElevationProfile() {
+            const response = await fetch('../../assets/gpx/template1.gpx');
+            const text = await response.text();
+            const parser = new DOMParser();
+            const gpx = parser.parseFromString(text, 'application/xml');
+
+            const trackpoints = gpx.querySelectorAll('trkpt');
+            if (trackpoints.length === 0) {
+                document.getElementById('elevation-wrapper').innerHTML =
+                    '<p class="elevation-error">No elevation data found in GPX file.</p>';
+                return;
+            }
+
+            const elevations = [];
+            const distances = [];
+            let totalDist = 0;
+            let prevLat = null, prevLon = null;
+
+            trackpoints.forEach((pt, i) => {
+                const lat = parseFloat(pt.getAttribute('lat'));
+                const lon = parseFloat(pt.getAttribute('lon'));
+                const ele = parseFloat(pt.querySelector('ele')?.textContent ?? 0);
+
+                // Haversine distance from previous point
+                if (prevLat !== null) {
+                    totalDist += haversine(prevLat, prevLon, lat, lon);
+                }
+
+                elevations.push(ele);
+                distances.push(parseFloat((totalDist / 1000).toFixed(3))); // number, not string
+                prevLat = lat;
+                prevLon = lon;
+            });
+
+            drawChart(distances, elevations);
+        }
+
+        // ── Haversine formula (returns metres) ────────────
+        function haversine(lat1, lon1, lat2, lon2) {
+            const R = 6371000;
+            const toRad = x => x * Math.PI / 180;
+            const dLat = toRad(lat2 - lat1);
+            const dLon = toRad(lon2 - lon1);
+            const a = Math.sin(dLat / 2) ** 2 +
+                Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+                Math.sin(dLon / 2) ** 2;
+            return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        }
+
+        // ── Draw Chart.js profile ─────────────────────────
+        function drawChart(distances, elevations) {
+            const ctx = document.getElementById('elevation-chart').getContext('2d');
+
+            // Build {x, y} pairs
+            const points = distances.map((d, i) => ({ x: d, y: elevations[i] }));
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Elevation (m)',
+                        data: points,
+                        borderColor: '#2a9d8f',
+                        backgroundColor: 'rgba(42,157,143,0.15)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 0,
+                        pointHoverRadius: 5,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                title: ctx => `Distance: ${ctx[0].parsed.x.toFixed(2)} km`,
+                                label: ctx => `Elevation: ${Math.round(ctx.parsed.y)} m`
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'linear',             // ← key fix
+                            ticks: {
+                                color: 'rgba(255,255,255,0.5)',
+                                maxTicksLimit: 8,
+                                callback: val => `${val.toFixed(1)} km`
+                            },
+                            grid: { color: 'rgba(255,255,255,0.05)' },
+                            title: {
+                                display: true,
+                                text: 'Distance (km)',
+                                color: 'rgba(255,255,255,0.5)',
+                                font: { size: 11 }
+                            }
+                        },
+                        y: {
+                            ticks: {
+                                color: 'rgba(255,255,255,0.5)',
+                                callback: val => `${val} m`
+                            },
+                            grid: { color: 'rgba(255,255,255,0.05)' },
+                            title: {
+                                display: true,
+                                text: 'Elevation (m)',
+                                color: 'rgba(255,255,255,0.5)',
+                                font: { size: 11 }
+                            }
+                        }
+                    }
+                }
+            });
+            }
+
+
+        // ── Run on page load ──────────────────────────────
+        loadElevationProfile();
+    </script>
+
+
+</body>
+
+</html>

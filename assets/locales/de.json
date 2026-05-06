@@ -1,0 +1,47 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "gallery": "Galerie",
+        "tours": "Touren",
+        "about": "Über mich"
+    },
+    "hero": {
+        "eyebrow": "Berge · Fotografie · Abenteuer",
+        "subtitle": "Die alpine Welt festhalten — Gipfel für Gipfel"
+    },
+    "about": {
+        "label": "Über mich",
+        "title": "Die Person hinter der Kamera",
+        "p1": "Willkommen bei JBergentdecker — ein persönlicher Raum gewidmet den Bergen und allem was sie bieten. Ob Sommerweg, alpine Route oder Skitour — jede Unternehmung ist eine Geschichte wert.",
+        "p2": "Hier findest du ein Fotoportfolio meiner Abenteuer in den Alpen und darüber hinaus, sowie detaillierte Tourenberichte mit Karten, Statistiken und ehrlichen Notizen für Gleichgesinnte.",
+        "stat1": "Fotos",
+        "stat2": "Gipfel",
+        "stat3": "Aktivitäten"
+    },
+    "showcase": {
+        "label": "Portfolio",
+        "title": "Ein Blick in die Alpen",
+        "subtitle": "Eine Auswahl aktueller Fotografien",
+        "viewGallery": "Galerie ansehen",
+        "cta": "Zur vollständigen Galerie →"
+    },
+    "toursteaser": {
+        "label": "Tourenberichte",
+        "title": "Aktuelle Abenteuer",
+        "subtitle": "Detaillierte Berichte mit Karten, Statistiken und Notizen",
+        "cta": "Alle Touren ansehen →"
+    },
+    "badge": {
+        "hiking": "Wandern",
+        "mountaineering": "Bergsteigen",
+        "skitouring": "Skitouren"
+    },
+    "stat": {
+        "distance": "Distanz",
+        "elevation": "Höhenmeter",
+        "duration": "Dauer"
+    },
+    "footer": {
+        "rights": "Alle Rechte vorbehalten"
+    }
+}

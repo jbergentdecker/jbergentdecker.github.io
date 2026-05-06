@@ -1,0 +1,196 @@
+Here's a complete `tours/pages/sample-tour.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Großglockner — Alpine Club</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../css/tour.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <!-- ========== HERO ========== -->
+    <section class="tour-hero">
+        <img src="../../assets/images/placeholder-hero.jpg" alt="Großglockner Hero" class="tour-hero__img" />
+        <div class="tour-hero__overlay">
+            <span class="badge">Hiking</span>
+            <h1 class="tour-hero__title">Großglockner via Normalweg</h1>
+            <p class="tour-hero__sub">📍 Hohe Tauern, Austria &nbsp;|&nbsp; 📅 July 2024</p>
+        </div>
+    </section>
+
+    <!-- ========== STATS BAR ========== -->
+    <section class="tour-stats">
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">📏</span>
+            <span class="tour-stats__value">14.2 km</span>
+            <span class="tour-stats__label">Distance</span>
+        </div>
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">⬆️</span>
+            <span class="tour-stats__value">1,850 m</span>
+            <span class="tour-stats__label">Elevation Gain</span>
+        </div>
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">⬇️</span>
+            <span class="tour-stats__value">1,850 m</span>
+            <span class="tour-stats__label">Elevation Loss</span>
+        </div>
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">🏔️</span>
+            <span class="tour-stats__value">3,798 m</span>
+            <span class="tour-stats__label">Summit</span>
+        </div>
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">⏱️</span>
+            <span class="tour-stats__value">8 h</span>
+            <span class="tour-stats__label">Duration</span>
+        </div>
+        <div class="tour-stats__item">
+            <span class="tour-stats__icon">💪</span>
+            <span class="tour-stats__value">T5</span>
+            <span class="tour-stats__label">Difficulty</span>
+        </div>
+    </section>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="tour-main container">
+        <div class="tour-layout">
+
+            <!-- LEFT: Description -->
+            <article class="tour-description">
+
+                <h2>About this Tour</h2>
+                <p>
+                    The Großglockner (3,798 m) is the highest peak in Austria and one of the most iconic summits
+                    in the Eastern Alps. This route follows the classic Normalweg from the Lucknerhaus, passing
+                    through the Lucknerhütte and the Stüdlhütte before tackling the glacier section to the summit.
+                </p>
+
+                <img src="../../assets/images/placeholder-1.jpg" alt="View from the ridge"
+                    class="tour-description__img" />
+
+                <h2>Route Description</h2>
+                <p>
+                    Starting from the Lucknerhaus (1,918 m), the trail climbs steadily through alpine meadows
+                    toward the Lucknerhütte (2,241 m). From there, the terrain becomes rockier as you gain
+                    altitude toward the Stüdlhütte (3,060 m), a good place to rest before the glacier.
+                </p>
+                <p>
+                    The glacier crossing requires crampons and an ice axe. Fixed ropes assist on the steepest
+                    sections near the Glocknerleitl. The final ridge to the summit is exposed but well-marked.
+                    The views from the top stretch across the Hohe Tauern in all directions.
+                </p>
+
+                <img src="../../assets/images/placeholder-2.jpg" alt="Glacier approach" class="tour-description__img" />
+
+                <h2>Practical Info</h2>
+                <ul class="tour-info-list">
+                    <li><strong>Start / End:</strong> Lucknerhaus, Kals am Großglockner</li>
+                    <li><strong>Best season:</strong> July – September</li>
+                    <li><strong>Gear:</strong> Crampons, ice axe, helmet, harness</li>
+                    <li><strong>Overnight:</strong> Stüdlhütte (recommended for early summit start)</li>
+                    <li><strong>Permit:</strong> None required</li>
+                </ul>
+
+                <h2>Gallery</h2>
+                <div class="tour-gallery">
+                    <img src="../../assets/images/placeholder-3.jpg" alt="Summit view" />
+                    <img src="../../assets/images/placeholder-4.jpg" alt="Ridge approach" />
+                    <img src="../../assets/images/placeholder-5.jpg" alt="Glacier" />
+                    <img src="../../assets/images/placeholder-6.jpg" alt="Hut" />
+                </div>
+
+            </article>
+
+            <!-- RIGHT: Sidebar -->
+            <aside class="tour-sidebar">
+
+                <div class="tour-sidebar__card">
+                    <h3>Quick Facts</h3>
+                    <ul>
+                        <li><strong>Region:</strong> Hohe Tauern, Austria</li>
+                        <li><strong>Date:</strong> 14 July 2024</li>
+                        <li><strong>Type:</strong> Summit hike / glacier</li>
+                        <li><strong>Difficulty:</strong> T5 / ZS</li>
+                        <li><strong>Group size:</strong> 3</li>
+                    </ul>
+                </div>
+
+                <div class="tour-sidebar__card">
+                    <h3>Map</h3>
+                    <div id="tour-map"></div>
+                </div>
+
+                <div class="tour-sidebar__card">
+                    <h3>Elevation Profile</h3>
+                    <canvas id="elevation-chart"></canvas>
+                </div>
+
+                <div class="tour-sidebar__card">
+                    <h3>Download</h3>
+                    <a href="../../assets/gpx/sample-tour.gpx" class="btn btn-outline" download>
+                        ⬇️ Download GPX
+                    </a>
+                </div>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/footer.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // --- MAP ---
+        const map = L.map('tour-map').setView([47.0742, 12.6947], 12);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        L.marker([47.0742, 12.6947]).addTo(map)
+            .bindPopup('<b>Großglockner</b><br>3,798 m')
+            .openPopup();
+
+        // --- ELEVATION CHART ---
+        const ctx = document.getElementById('elevation-chart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['0', '2', '4', '6', '8', '10', '12', '14'],
+                datasets: [{
+                    label: 'Elevation (m)',
+                    data: [1918, 2100, 2400, 2800, 3060, 3300, 3600, 3798],
+                    borderColor: '#2a9d8f',
+                    backgroundColor: 'rgba(42,157,143,0.15)',
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 3
+                }]
+            },
+            options: {
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { title: { display: true, text: 'Distance (km)' } },
+                    y: { title: { display: true, text: 'Elevation (m)' } }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
