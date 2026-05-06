@@ -11,11 +11,14 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- ── Navigation (injected by navbar.js) ── -->
     <div id="navbar-placeholder"></div>
 
-    <!-- FILTER BAR -->
+    <!-- ── Filter bar
+         data-type groups filters so only one per group is active at a time
+         data-filter must match the field values used in photos.json ── -->
     <section id="filters">
+
         <div class="filter-group">
             <span class="filter-label">Activity</span>
             <button class="filter-btn active" data-type="activity" data-filter="all">All</button>
@@ -32,32 +35,35 @@
             <button class="filter-btn" data-type="season" data-filter="autumn">Autumn</button>
             <button class="filter-btn" data-type="season" data-filter="winter">Winter</button>
         </div>
+
     </section>
 
+    <!-- ── Photo grid (injected by gallery.js) ── -->
+    <main id="gallery-grid"></main>
 
-    <!-- PHOTO GRID -->
-    <main id="gallery-grid">
-        <!-- Populated by gallery.js -->
-    </main>
-
-    <!-- LIGHTBOX -->
+    <!-- ── Lightbox overlay ── -->
     <div id="lightbox" class="hidden">
-        <button id="lb-close">✕</button>
-        <button id="lb-prev">‹</button>
-        <button id="lb-next">›</button>
-        <img id="lb-img" src="" alt="" />
-        <p id="lb-description"></p>
+        <button id="lb-close" aria-label="Close">✕</button>
+        <button id="lb-prev" aria-label="Previous">‹</button>
+        <button id="lb-next" aria-label="Next">›</button>
+        <div id="lb-media-wrap">
+            <img id="lb-img" src="" alt="" />
+            <div id="lb-caption">
+                <p id="lb-title"></p>
+                <p id="lb-description"></p>
+            </div>
+        </div>
     </div>
 
-    <!-- ========== FOOTER ========== -->
+    <!-- ── Footer (injected by footer.js) ── -->
     <div id="footer-placeholder"></div>
 
     <script src="../assets/js/i18n.js"></script>
     <script src="../assets/js/main.js"></script>
-
     <script src="js/gallery.js"></script>
     <script src="../assets/js/footer.js"></script>
     <script src="../assets/js/navbar.js"></script>
+
 </body>
 
 </html>

@@ -2,20 +2,15 @@
    TOUR DETAIL PAGE
    ================================================ */
 
-/* ── Hero ───────────────────────────────────────── */
+/* ── Hero Banner ────────────────────────────────── */
 .tour-hero {
     position: relative;
     height: 480px;
-    overflow: hidden;
-    margin-top: 0;
-}
-
-.tour-hero__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
 }
 
 .tour-hero__overlay {
@@ -61,7 +56,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0;
     background: #1a1a2e;
     border-bottom: 3px solid var(--accent, #2a9d8f);
 }
@@ -130,21 +124,27 @@
     margin-bottom: 1rem;
 }
 
-/* ── Inline description images ──────────────────── */
+/* Inline images — block + lightbox wrapper */
 .tour-description__img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 8px;
     margin: 1rem 0;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
 }
 
-/* prevent GLightbox from adding any layout shift */
+.tour-description__img:hover {
+    opacity: 0.85;
+}
+
 .tour-description a.glightbox {
     display: block;
     width: 100%;
 }
 
+/* Practical info list */
 .tour-info-list {
     list-style: none;
     padding: 0;
@@ -166,7 +166,7 @@
     color: var(--text, #e0e0e0);
 }
 
-/* ── Inline Tour Gallery ────────────────────────── */
+/* ── Inline Gallery (grid) ──────────────────────── */
 .tour-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -179,6 +179,7 @@
     overflow: hidden;
     border-radius: 8px;
     aspect-ratio: 4/3;
+    position: relative;
 }
 
 .tour-gallery a img {
@@ -191,6 +192,57 @@
 
 .tour-gallery a:hover img {
     transform: scale(1.05);
+}
+
+/* Caption overlay */
+.tour-gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.6rem 0.75rem;
+    background: rgba(0, 0, 0, 0.55);
+    color: #ffffff;
+    font-size: 0.82rem;
+    font-weight: 500;
+    border-radius: 0 0 8px 8px;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    pointer-events: none;
+}
+
+.tour-gallery a:hover .tour-gallery__caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── GLightbox Caption Overlay ──────────────────── */
+.glightbox-container .gslide-description {
+    background: rgba(0, 0, 0, 0.55) !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.75rem 1rem;
+    border-radius: 0 0 6px 6px;
+}
+
+.glightbox-container .gdesc-inner {
+    padding: 0;
+}
+
+.glightbox-container .gslide-title {
+    color: #ffffff !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.glightbox-container .gslide-desc {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.82rem;
+    margin: 0;
 }
 
 /* ── Sidebar ────────────────────────────────────── */
@@ -236,43 +288,49 @@
     color: var(--text, #e0e0e0);
 }
 
-/* ── Map Preview ────────────────────────────────── */
-#map-container {
-    position: relative;
+/* ── Thumbnail Map (sidebar) ────────────────────── */
+#map-thumb {
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
     cursor: pointer;
 }
 
-.map-preview {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: opacity 0.2s ease;
-    display: block;
-}
-
-.map-preview:hover {
-    opacity: 0.85;
-}
-
-.map-preview__hint {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.65);
-    color: #fff;
+.map-expand-hint {
+    text-align: center;
     font-size: 0.8rem;
-    padding: 0.3rem 0.8rem;
-    border-radius: 999px;
-    pointer-events: none;
-    white-space: nowrap;
+    color: var(--text-muted, #a0a0b0);
+    margin-top: 0.5rem;
+    cursor: pointer;
 }
 
-/* ── Map ────────────────────────────────────────── */
-#tour-map {
-    height: 220px;
-    border-radius: 8px;
+/* ── Fullscreen Map Lightbox ────────────────────── */
+.map-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-lightbox__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+#map-full {
+    width: 90vw;
+    height: 85vh;
+    border-radius: 12px;
     overflow: hidden;
 }
 

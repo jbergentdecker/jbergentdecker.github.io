@@ -11,16 +11,17 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- ── Navigation (injected by navbar.js) ── -->
     <div id="navbar-placeholder"></div>
 
-    <!-- HEADER -->
+    <!-- ── Page header ── -->
     <header class="tours-header">
         <h1>Our Tours</h1>
         <p>Explore our mountain adventures</p>
     </header>
 
-    <!-- FILTERS -->
+    <!-- ── Filter bar
+         data-filter must match the activity tags used in tours.js ── -->
     <section class="tours-filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="hiking">Hiking</button>
@@ -32,20 +33,18 @@
         <button class="filter-btn" data-filter="cycling">Cycling</button>
     </section>
 
-    <!-- TOUR CARDS GRID -->
-    <main class="tours-grid" id="tours-grid">
-        <!-- Cards injected by tours.js -->
-    </main>
+    <!-- ── Tour cards (injected by tours.js) ── -->
+    <main class="tours-grid" id="tours-grid"></main>
 
-    <!-- ========== FOOTER ========== -->
+    <!-- ── Footer (injected by footer.js) ── -->
     <div id="footer-placeholder"></div>
 
     <script src="../assets/js/i18n.js"></script>
     <script src="../assets/js/main.js"></script>
-    
     <script src="js/tours.js"></script>
     <script src="../assets/js/footer.js"></script>
     <script src="../assets/js/navbar.js"></script>
+
 </body>
 
 </html>

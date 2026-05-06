@@ -1,4 +1,9 @@
-/* ─── HEADER ─────────────────────────────────────────── */
+/* ════════════════════════════════════════════════════
+   TOURS PAGE  —  tours.css
+   Depends on global variables in style.css
+   ════════════════════════════════════════════════════ */
+
+/* ─── PAGE HEADER ─────────────────────────────────── */
 .tours-header {
     text-align: center;
     padding: 60px 20px 30px;
@@ -16,7 +21,8 @@
     opacity: 0.75;
 }
 
-/* ─── FILTERS ─────────────────────────────────────────── */
+
+/* ─── FILTER BAR ──────────────────────────────────── */
 .tours-filters {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +32,7 @@
     background-color: var(--color-bg);
 }
 
+/* Base button */
 .filter-btn {
     padding: 8px 18px;
     border: 2px solid var(--color-accent);
@@ -34,16 +41,25 @@
     color: var(--color-accent);
     font-size: 0.9rem;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-.filter-btn:hover,
+/* Hover — subtle preview */
+.filter-btn:hover {
+    background-color: rgba(var(--color-accent-rgb), 0.15);
+}
+
+/* Active — clearly selected filter */
 .filter-btn.active {
     background-color: var(--color-accent);
     color: #fff;
+    box-shadow: 0 0 0 3px rgba(var(--color-accent-rgb), 0.35);
+    /* glow ring */
+    font-weight: 700;
 }
 
-/* ─── GRID ────────────────────────────────────────────── */
+
+/* ─── CARD GRID ───────────────────────────────────── */
 .tours-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -53,7 +69,8 @@
     margin: 0 auto;
 }
 
-/* ─── CARD ────────────────────────────────────────────── */
+
+/* ─── TOUR CARD ───────────────────────────────────── */
 .tour-card {
     background-color: var(--color-card);
     border-radius: 12px;
@@ -72,12 +89,14 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
 }
 
+/* Card thumbnail */
 .tour-card-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
+/* Card text area */
 .tour-card-body {
     padding: 16px;
     flex: 1;
@@ -97,6 +116,8 @@
     color: var(--color-muted);
 }
 
+
+/* ─── BADGES ──────────────────────────────────────── */
 .tour-card-badges {
     display: flex;
     gap: 8px;
@@ -112,6 +133,7 @@
     text-transform: capitalize;
 }
 
+/* Colour per badge type — add more as needed */
 .badge-activity {
     background-color: var(--color-accent);
     color: #fff;
@@ -132,29 +154,32 @@
     color: #fff;
 }
 
+
+/* ─── CARD STATS (bottom row) ─────────────────────── */
 .tour-card-stats {
     display: flex;
     gap: 14px;
     font-size: 0.82rem;
     color: var(--color-muted);
     margin-top: auto;
+    /* pushes stats to card bottom */
     padding-top: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     flex-wrap: wrap;
 }
 
-.tour-card-stats span::before {
-    margin-right: 4px;
-}
-
-.stat-distance::before {
+/* Emoji icons via pseudo-elements */
+.stat-distance ::before {
     content: "📏";
+    margin-right: 4px;
 }
 
 .stat-elevation::before {
     content: "⬆️";
+    margin-right: 4px;
 }
 
-.stat-duration::before {
+.stat-duration ::before {
     content: "⏱️";
+    margin-right: 4px;
 }

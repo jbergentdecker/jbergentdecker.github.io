@@ -1,10 +1,14 @@
+/* ════════════════════════════════════════════════════
+   GALLERY PAGE  —  gallery.css
+   Depends on global variables in style.css
+   ════════════════════════════════════════════════════ */
+
 body {
     padding-top: var(--navbar-height);
 }
 
-/* ===========================
-   FILTER BAR
-=========================== */
+
+/* ─── FILTER BAR ──────────────────────────────────── */
 #filters {
     display: flex;
     flex-direction: column;
@@ -17,51 +21,62 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.5rem;
     justify-content: center;
+    gap: 0.5rem;
 }
 
 .filter-label {
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-muted);
-    margin-right: 0.3rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    margin-right: 0.3rem;
 }
 
+/* Base button */
 .filter-btn {
     padding: 0.4rem 1.2rem;
     border: 2px solid var(--accent);
     border-radius: 999px;
     background: transparent;
     color: var(--accent);
-    cursor: pointer;
     font-size: 0.9rem;
-    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-.filter-btn:hover,
+/* Hover — subtle preview */
+.filter-btn:hover {
+    background: rgba(var(--accent-rgb), 0.15);
+}
+
+/* Active — clearly selected filter */
 .filter-btn.active {
     background: var(--accent);
     color: #fff;
+    font-weight: 700;
+    box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.35);
+    /* glow ring */
 }
 
-/* ===========================
-   MASONRY GRID
-=========================== */
+
+/* ─── MASONRY GRID ────────────────────────────────── */
 #gallery-grid {
     columns: 3 280px;
+    /* 3 cols min, collapses when viewport narrows */
     gap: 1rem;
     padding: 1rem 2rem;
 }
 
 .gallery-item {
     break-inside: avoid;
+    /* prevents image being cut across columns */
     margin-bottom: 1rem;
     cursor: pointer;
     overflow: hidden;
     border-radius: 8px;
+    position: relative;
 }
 
 .gallery-item img {
@@ -74,9 +89,31 @@ body {
     transform: scale(1.03);
 }
 
-/* ===========================
-   LIGHTBOX
-=========================== */
+/* Caption shown on hover (text set via JS from photos.json) */
+.gallery-item__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.6rem 0.75rem;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 500;
+    border-radius: 0 0 8px 8px;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    pointer-events: none;
+}
+
+.gallery-item:hover .gallery-item__caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ─── LIGHTBOX OVERLAY ────────────────────────────── */
 #lightbox {
     position: fixed;
     inset: 0;
@@ -84,7 +121,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     z-index: 1000;
 }
 
@@ -92,21 +128,48 @@ body {
     display: none;
 }
 
-#lb-img {
-    max-width: 90vw;
-    max-height: 75vh;
+/* Image + caption wrapper */
+#lb-media-wrap {
+    position: relative;
+    display: inline-block;
     border-radius: 6px;
+    overflow: hidden;
+    max-width: 90vw;
+}
+
+#lb-img {
+    display: block;
+    max-width: 90vw;
+    max-height: 80vh;
     object-fit: contain;
+    border-radius: 6px;
+}
+
+/* Caption overlay — same style as grid hover caption */
+#lb-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.6rem 1rem;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 0 0 6px 6px;
+}
+
+#lb-title {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 0.2rem;
 }
 
 #lb-description {
-    color: #eee;
-    margin-top: 1rem;
-    font-size: 0.95rem;
-    text-align: center;
-    max-width: 600px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.82rem;
+    margin: 0;
 }
 
+/* Close button — top right */
 #lb-close {
     position: absolute;
     top: 1rem;
@@ -116,8 +179,10 @@ body {
     border: none;
     color: #fff;
     cursor: pointer;
+    z-index: 1001;
 }
 
+/* Prev / Next arrows — vertically centred */
 #lb-prev,
 #lb-next {
     position: absolute;
@@ -129,6 +194,7 @@ body {
     color: #fff;
     cursor: pointer;
     padding: 0 1rem;
+    z-index: 1001;
 }
 
 #lb-prev {

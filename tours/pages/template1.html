@@ -4,20 +4,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Lightbox -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css" />
     <title>Großglockner</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <link rel="stylesheet" href="../css/tour.css" />
+
+    <!-- Leaflet (map) -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- GLightbox (image + map lightbox) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css" />
 </head>
 
 <body>
 
+    <!-- ========== NAVBAR ========== -->
     <div id="navbar-placeholder"></div>
 
-    <!-- ========== HERO ========== -->
-    <section class="tour-hero">
+    <!-- ========== HERO BANNER ========== -->
+    <section class="tour-hero" style="background-image: url('../../assets/images/gallery/3.JPG');">
         <div class="tour-hero__overlay">
             <span class="badge">Hiking</span>
             <h1 class="tour-hero__title">Großglockner via Normalweg</h1>
@@ -63,7 +69,7 @@
     <main class="tour-main container">
         <div class="tour-layout">
 
-            <!-- LEFT: Description -->
+            <!-- ── LEFT: Description ── -->
             <article class="tour-description">
 
                 <h2>About this Tour</h2>
@@ -73,8 +79,12 @@
                     through the Lucknerhütte and the Stüdlhütte before tackling the glacier section to the summit.
                 </p>
 
-                <img src="../../assets/images/placeholder-1.jpg" alt="View from the ridge"
-                    class="tour-description__img" />
+                <a href="../../assets/images/placeholder-1.jpg" class="glightbox" data-gallery="tour-desc"
+                    data-title="View from the Ridge"
+                    data-description="Looking south along the main ridge approaching the glacier section.">
+                    <img src="../../assets/images/placeholder-1.jpg" alt="View from the ridge"
+                        class="tour-description__img" />
+                </a>
 
                 <h2>Route Description</h2>
                 <p>
@@ -88,7 +98,12 @@
                     The views from the top stretch across the Hohe Tauern in all directions.
                 </p>
 
-                <img src="../../assets/images/placeholder-2.jpg" alt="Glacier approach" class="tour-description__img" />
+                <a href="../../assets/images/placeholder-2.jpg" class="glightbox" data-gallery="tour-desc"
+                    data-title="Glacier Approach"
+                    data-description="The lower glacier section — crampons mandatory from this point.">
+                    <img src="../../assets/images/placeholder-2.jpg" alt="Glacier approach"
+                        class="tour-description__img" />
+                </a>
 
                 <h2>Practical Info</h2>
                 <ul class="tour-info-list">
@@ -101,20 +116,26 @@
 
                 <h2>Gallery</h2>
                 <div class="tour-gallery">
-                    <a href="../../assets/images/gallery/6.jpg" class="glightbox" data-gallery="tour">
+                    <a href="../../assets/images/gallery/6.jpg" class="glightbox" data-gallery="tour-gallery"
+                        data-title="Summit View"
+                        data-description="Looking south from the Großglockner summit at 3,798 m.">
                         <img src="../../assets/images/gallery/6.jpg" alt="Summit view" />
+                        <span class="tour-gallery__caption">Summit View</span>
                     </a>
-                    <a href="../../assets/images/gallery/5.jpg" class="glightbox" data-gallery="tour">
+                    <a href="../../assets/images/gallery/5.jpg" class="glightbox" data-gallery="tour-gallery"
+                        data-title="Ridge Approach"
+                        data-description="The exposed final ridge leading to the summit cross.">
                         <img src="../../assets/images/gallery/5.jpg" alt="Ridge view" />
+                        <span class="tour-gallery__caption">Ridge Approach</span>
                     </a>
                 </div>
 
-
             </article>
 
-            <!-- RIGHT: Sidebar -->
+            <!-- ── RIGHT: Sidebar ── -->
             <aside class="tour-sidebar">
 
+                <!-- Quick Facts -->
                 <div class="tour-sidebar__card">
                     <h3>Quick Facts</h3>
                     <ul>
@@ -126,25 +147,25 @@
                     </ul>
                 </div>
 
+                <!-- Route Map — click thumbnail to open fullscreen -->
                 <div class="tour-sidebar__card">
                     <h3>Route Map</h3>
-
-                    <!-- Static preview, click to load interactive map -->
-                    <div id="map-container">
-                        <img id="map-preview" src="../../assets/gpx/template1.gpx" alt="Click to load interactive map"
-                            class="map-preview" onclick="loadMap()" title="Click to open interactive map" />
+                    <div id="map-thumb" onclick="openMapLightbox()" title="Click to expand">
+                        <!-- Thumbnail map renders here -->
                     </div>
-
-                    <div id="tour-map" style="display:none;"></div>
+                    <p class="map-expand-hint">🔍 Click to expand</p>
                 </div>
 
+                <!-- Elevation Profile -->
                 <div class="tour-sidebar__card">
+                    <h3>Elevation Profile</h3>
                     <div id="elevation-wrapper">
-                        <p class="elevation-loading">Elevation Profile</p>
+                        <p class="elevation-loading" id="elevation-status">Loading…</p>
                         <canvas id="elevation-chart"></canvas>
                     </div>
                 </div>
 
+                <!-- GPX Download -->
                 <div class="tour-sidebar__card">
                     <h3>Download</h3>
                     <a href="../../assets/gpx/template1.gpx" class="btn btn-outline" download>
@@ -153,9 +174,14 @@
                 </div>
 
             </aside>
-
         </div>
     </main>
+
+    <!-- ========== MAP FULLSCREEN OVERLAY ========== -->
+    <div id="map-lightbox" class="map-lightbox" style="display:none;">
+        <button class="map-lightbox__close" onclick="closeMapLightbox()">✕</button>
+        <div id="map-full"></div>
+    </div>
 
     <!-- ========== FOOTER ========== -->
     <div id="footer-placeholder"></div>
@@ -163,116 +189,155 @@
     <!-- ========== SCRIPTS ========== -->
     <script src="../../assets/js/i18n.js"></script>
     <script src="../../assets/js/main.js"></script>
-
     <script src="../../assets/js/navbar.js"></script>
     <script src="../../assets/js/footer.js"></script>
 
+    <!-- GLightbox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
     <script>
-        GLightbox({ selector: '.glightbox' });
+        GLightbox({ selector: '.glightbox', descPosition: 'bottom' });
     </script>
 
-
-    <!-- ========== MAP ========== -->
+    <!-- Leaflet + GPX plugin -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+
+    <!-- Chart.js (elevation profile) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script>
-        let mapLoaded = false;
+        // ═══════════════════════════════════════════════
+        //  CONFIGURATION — edit these for each tour
+        // ═══════════════════════════════════════════════
+        const GPX_FILE = '../../assets/gpx/template1.gpx';
+        const MAP_CENTER = [47.0742, 12.6947];   // [lat, lng]
+        const MAP_ZOOM = 12;
 
-        function loadMap() {
-            if (mapLoaded) return;
-            mapLoaded = true;
+        // GPX marker icons (hosted CDN — no change needed)
+        const GPX_ICONS = {
+            startIconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-icon-start.png',
+            endIconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-icon-end.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-shadow.png',
+        };
 
-            // Hide preview
-            document.getElementById('map-container').style.display = 'none';
-            const mapDiv = document.getElementById('tour-map');
-            mapDiv.style.display = 'block';
+        const GPX_STYLE = { color: '#2a9d8f', weight: 3, opacity: 0.9 };
 
-            // Init map
-            const map = L.map('tour-map').setView([47.0742, 12.6947], 12);
+        // ═══════════════════════════════════════════════
+        //  HELPER — create a Leaflet map in any container
+        // ═══════════════════════════════════════════════
+        function createLeafletMap(containerId, options = {}) {
+            const map = L.map(containerId, options).setView(MAP_CENTER, MAP_ZOOM);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '© OpenStreetMap contributors'
             }).addTo(map);
+            return map;
+        }
 
-            // Load GPX — replace with your actual file
-            new L.GPX('../../assets/gpx/template1.gpx', {
+        function loadGpxOnMap(map) {
+            new L.GPX(GPX_FILE, {
                 async: true,
-                marker_options: {
-                    startIconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-icon-start.png',
-                    endIconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-icon-end.png',
-                    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-shadow.png',
-                },
-                polyline_options: {
-                    color: '#2a9d8f',
-                    weight: 3,
-                    opacity: 0.9
-                }
+                marker_options: GPX_ICONS,
+                polyline_options: GPX_STYLE
             })
-                .on('loaded', function (e) {
-                    map.fitBounds(e.target.getBounds());
-                })
+                .on('loaded', e => map.fitBounds(e.target.getBounds()))
                 .addTo(map);
         }
-    </script>
 
-    <!-- ========== ELEVATION PROFILE ========== -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        // ── Parse GPX and draw elevation profile ──────────
-        async function loadElevationProfile() {
-            const response = await fetch('../../assets/gpx/template1.gpx');
-            const text = await response.text();
-            const parser = new DOMParser();
-            const gpx = parser.parseFromString(text, 'application/xml');
+        // ═══════════════════════════════════════════════
+        //  THUMBNAIL MAP (sidebar, non-interactive)
+        // ═══════════════════════════════════════════════
+        const thumbMap = createLeafletMap('map-thumb', {
+            zoomControl: false,
+            dragging: false,
+            scrollWheelZoom: false,
+            doubleClickZoom: false,
+            touchZoom: false,
+        });
+        loadGpxOnMap(thumbMap);
 
-            const trackpoints = gpx.querySelectorAll('trkpt');
-            if (trackpoints.length === 0) {
-                document.getElementById('elevation-wrapper').innerHTML =
-                    '<p class="elevation-error">No elevation data found in GPX file.</p>';
-                return;
+        // ═══════════════════════════════════════════════
+        //  FULLSCREEN MAP LIGHTBOX
+        // ═══════════════════════════════════════════════
+        let fullMap = null;   // lazy-initialized on first open
+
+        function openMapLightbox() {
+            document.getElementById('map-lightbox').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
+            if (!fullMap) {
+                fullMap = createLeafletMap('map-full');
+                loadGpxOnMap(fullMap);
+                setTimeout(() => fullMap.invalidateSize(), 100); // ensure correct render size
             }
-
-            const elevations = [];
-            const distances = [];
-            let totalDist = 0;
-            let prevLat = null, prevLon = null;
-
-            trackpoints.forEach((pt, i) => {
-                const lat = parseFloat(pt.getAttribute('lat'));
-                const lon = parseFloat(pt.getAttribute('lon'));
-                const ele = parseFloat(pt.querySelector('ele')?.textContent ?? 0);
-
-                // Haversine distance from previous point
-                if (prevLat !== null) {
-                    totalDist += haversine(prevLat, prevLon, lat, lon);
-                }
-
-                elevations.push(ele);
-                distances.push(parseFloat((totalDist / 1000).toFixed(3))); // number, not string
-                prevLat = lat;
-                prevLon = lon;
-            });
-
-            drawChart(distances, elevations);
         }
 
-        // ── Haversine formula (returns metres) ────────────
+        function closeMapLightbox() {
+            document.getElementById('map-lightbox').style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        // Close fullscreen map with Escape key
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeMapLightbox();
+        });
+
+        // ═══════════════════════════════════════════════
+        //  ELEVATION PROFILE
+        // ═══════════════════════════════════════════════
+
+        // Haversine distance between two GPS points (returns metres)
         function haversine(lat1, lon1, lat2, lon2) {
             const R = 6371000;
             const toRad = x => x * Math.PI / 180;
             const dLat = toRad(lat2 - lat1);
             const dLon = toRad(lon2 - lon1);
-            const a = Math.sin(dLat / 2) ** 2 +
-                Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
-                Math.sin(dLon / 2) ** 2;
+            const a = Math.sin(dLat / 2) ** 2
+                + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
             return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         }
 
-        // ── Draw Chart.js profile ─────────────────────────
-        function drawChart(distances, elevations) {
-            const ctx = document.getElementById('elevation-chart').getContext('2d');
+        async function loadElevationProfile() {
+            const statusEl = document.getElementById('elevation-status');
 
-            // Build {x, y} pairs
+            try {
+                const text = await fetch(GPX_FILE).then(r => r.text());
+                const gpx = new DOMParser().parseFromString(text, 'application/xml');
+                const pts = gpx.querySelectorAll('trkpt');
+
+                if (pts.length === 0) {
+                    statusEl.textContent = 'No elevation data found.';
+                    statusEl.className = 'elevation-error';
+                    return;
+                }
+
+                // Build distance + elevation arrays
+                let totalDist = 0, prevLat = null, prevLon = null;
+                const distances = [], elevations = [];
+
+                pts.forEach(pt => {
+                    const lat = parseFloat(pt.getAttribute('lat'));
+                    const lon = parseFloat(pt.getAttribute('lon'));
+                    const ele = parseFloat(pt.querySelector('ele')?.textContent ?? 0);
+
+                    if (prevLat !== null) totalDist += haversine(prevLat, prevLon, lat, lon);
+
+                    distances.push(parseFloat((totalDist / 1000).toFixed(3)));
+                    elevations.push(ele);
+                    prevLat = lat; prevLon = lon;
+                });
+
+                // Hide loading text, draw chart
+                statusEl.style.display = 'none';
+                drawElevationChart(distances, elevations);
+
+            } catch (err) {
+                statusEl.textContent = 'Could not load elevation data.';
+                statusEl.className = 'elevation-error';
+            }
+        }
+
+        function drawElevationChart(distances, elevations) {
+            const ctx = document.getElementById('elevation-chart').getContext('2d');
             const points = distances.map((d, i) => ({ x: d, y: elevations[i] }));
 
             new Chart(ctx, {
@@ -291,58 +356,35 @@
                 },
                 options: {
                     responsive: true,
-                    interaction: {
-                        mode: 'index',
-                        intersect: false
-                    },
+                    interaction: { mode: 'index', intersect: false },
                     plugins: {
                         legend: { display: false },
                         tooltip: {
                             callbacks: {
-                                title: ctx => `Distance: ${ctx[0].parsed.x.toFixed(2)} km`,
-                                label: ctx => `Elevation: ${Math.round(ctx.parsed.y)} m`
+                                title: c => `Distance: ${c[0].parsed.x.toFixed(2)} km`,
+                                label: c => `Elevation: ${Math.round(c.parsed.y)} m`
                             }
                         }
                     },
                     scales: {
                         x: {
-                            type: 'linear',             // ← key fix
-                            ticks: {
-                                color: 'rgba(255,255,255,0.5)',
-                                maxTicksLimit: 8,
-                                callback: val => `${val.toFixed(1)} km`
-                            },
+                            type: 'linear',
+                            ticks: { color: 'rgba(255,255,255,0.5)', maxTicksLimit: 8, callback: v => `${v.toFixed(1)} km` },
                             grid: { color: 'rgba(255,255,255,0.05)' },
-                            title: {
-                                display: true,
-                                text: 'Distance (km)',
-                                color: 'rgba(255,255,255,0.5)',
-                                font: { size: 11 }
-                            }
+                            title: { display: true, text: 'Distance (km)', color: 'rgba(255,255,255,0.5)', font: { size: 11 } }
                         },
                         y: {
-                            ticks: {
-                                color: 'rgba(255,255,255,0.5)',
-                                callback: val => `${val} m`
-                            },
+                            ticks: { color: 'rgba(255,255,255,0.5)', callback: v => `${v} m` },
                             grid: { color: 'rgba(255,255,255,0.05)' },
-                            title: {
-                                display: true,
-                                text: 'Elevation (m)',
-                                color: 'rgba(255,255,255,0.5)',
-                                font: { size: 11 }
-                            }
+                            title: { display: true, text: 'Elevation (m)', color: 'rgba(255,255,255,0.5)', font: { size: 11 } }
                         }
                     }
                 }
             });
-            }
+        }
 
-
-        // ── Run on page load ──────────────────────────────
         loadElevationProfile();
     </script>
-
 
 </body>
 
