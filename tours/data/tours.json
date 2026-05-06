@@ -17,7 +17,7 @@
         "duration": "6h 30min",
         "cover_image": "../assets/images/gallery/1.jpg",
         "page": {
-            "en": "pages/template1_en.html",
+            "en": "pages/template1.html",
             "de": "pages/template1_de.html"
         }
     },

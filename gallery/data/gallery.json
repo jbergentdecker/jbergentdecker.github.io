@@ -1,0 +1,104 @@
+[
+    {
+        "id": 1,
+        "src": "1.jpg",
+        "thumb": "1.jpg",
+        "location": "Zugspitze",
+        "season": "summer",
+        "activity": "hiking",
+        "date": "2024-07-14",
+        "alt": {
+            "en": "Sunrise on the Zugspitze",
+            "de": "Sonnenaufgang auf der Zugspitze"
+        },
+        "description": {
+            "en": "Golden hour from the summit of the Zugspitze.",
+            "de": "Goldene Stunde vom Gipfel der Zugspitze."
+        }
+    },
+    {
+        "id": 2,
+        "src": "2.jpg",
+        "thumb": "2.jpg",
+        "location": "Berchtesgaden",
+        "season": "winter",
+        "activity": "climbing",
+        "date": "2024-01-20",
+        "alt": {
+            "en": "Ice climbing in the Berchtesgaden Alps",
+            "de": "Eiswandern in den Berchtesgadener Alpen"
+        },
+        "description": {
+            "en": "Frozen waterfall route, grade WI4.",
+            "de": "Gefrorener Wasserfallweg, Grad WI4."
+        }
+    },
+    {
+        "id": 3,
+        "src": "3.jpg",
+        "thumb": "3.jpg",
+        "location": "Stubai",
+        "season": "winter",
+        "activity": "skitouring",
+        "date": "2024-02-10",
+        "alt": {
+            "en": "Ski touring in the Stubai Alps",
+            "de": "Skitouring in den Stubai-Alpen"
+        },
+        "description": {
+            "en": "Perfect powder day on the Stubaier Wildspitze approach.",
+            "de": "Perfekter Pulvertag auf dem Weg zur Stubaier Wildspitze."
+        }
+    },
+    {
+        "id": 4,
+        "src": "4.jpg",
+        "thumb": "4.jpg",
+        "location": "Karwendel",
+        "season": "autumn",
+        "activity": "hiking",
+        "date": "2023-10-05",
+        "alt": {
+            "en": "Autumn hike in the Karwendel",
+            "de": "Herbstwanderung in den Karwendel"
+        },
+        "description": {
+            "en": "Larch forests turning golden in the Karwendel range.",
+            "de": "Lärchenwälder, die in den Karwendel gebirgen golden werden."
+        }
+    },
+    {
+        "id": 5,
+        "src": "5.jpg",
+        "thumb": "5.jpg",
+        "location": "Dolomites",
+        "season": "summer",
+        "activity": "climbing",
+        "date": "2024-08-03",
+        "alt": {
+            "en": "Rock climbing in the Dolomites",
+            "de": "Klettern in den Dolomiten"
+        },
+        "description": {
+            "en": "Multi-pitch route on the Tre Cime di Lavaredo.",
+            "de": "Mehrfach-Pitch-Route auf den Tre Cime di Lavaredo."
+        }
+    },
+    {
+        "id": 6,
+        "src": "6.jpg",
+        "thumb": "6.jpg",
+        "location": "Allgäu",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2024-03-28",
+        "alt": {
+            "en": "Spring snowshoeing in the Allgäu",
+            "de": "Frühjahrschneemachen in den Allgäuer"
+        },
+        "description": {
+            "en": "Late season snow still covering the Allgäu foothills.",
+            "de": "Späte Saison, bei der Schnee die Allgäuer Voralpen bedeckt."
+        }
+    }
+]

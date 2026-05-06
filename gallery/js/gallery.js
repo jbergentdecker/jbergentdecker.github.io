@@ -3,7 +3,7 @@
    ════════════════════════════════════════════════════ */
 
 // ─── CONFIG ───────────────────────────────────────────
-const JSON_PATH = "./data/photos.json";
+const JSON_PATH = "./data/gallery.json";
 const IMG_BASE = "../assets/images/gallery/";
 
 // ─── STATE ────────────────────────────────────────────
@@ -11,7 +11,17 @@ let photos = [];
 let filtered = [];
 let activeActivity = "all";
 let activeSeason = "all";
-let lightbox = null;   // GLightbox instance
+let lightbox = null;
+
+
+// ─── HELPER — multilang field ─────────────────────────
+function t(field) {
+    const lang = window.i18n?.currentLang ?? 'en';
+    if (typeof field === 'object' && field !== null) {
+        return field[lang] ?? field['en'] ?? Object.values(field)[0];
+    }
+    return field ?? '';
+}
 
 
 /* ════════════════════════════════════════════════════
@@ -21,11 +31,12 @@ let lightbox = null;   // GLightbox instance
 async function loadPhotos() {
     try {
         const res = await fetch(JSON_PATH);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
         photos = await res.json();
         filtered = photos;
         renderGrid(filtered);
     } catch (err) {
-        console.error("Failed to load photos.json:", err);
+        console.error("Failed to load gallery.json:", err);
     }
 }
 
@@ -36,31 +47,38 @@ async function loadPhotos() {
 
 function renderGrid(items) {
     const grid = document.getElementById("gallery-grid");
+    if (!grid) { console.error("gallery-grid not found"); return; }
     grid.innerHTML = "";
 
+    if (!items || items.length === 0) {
+        grid.innerHTML = "<p>No photos found.</p>";
+        return;
+    }
+
     items.forEach((photo) => {
-        // ── Outer div (keeps the original layout) ──
+        // ── Outer div ──
         const item = document.createElement("div");
         item.classList.add("gallery-item");
 
-        // ── GLightbox anchor wraps the content ──
+        // ── GLightbox anchor ──
         const link = document.createElement("a");
         link.href = IMG_BASE + photo.src;
         link.classList.add("glightbox");
         link.dataset.gallery = "gallery-page";
-        link.dataset.title = photo.alt;
-        link.dataset.description = photo.description;
+        link.dataset.photoId = photo.id;
+        link.dataset.title = t(photo.alt);
+        link.dataset.description = t(photo.description);
 
         // ── Thumbnail image ──
         const img = document.createElement("img");
         img.src = IMG_BASE + photo.thumb;
-        img.alt = photo.alt;
+        img.alt = t(photo.alt);
         img.loading = "lazy";
 
         // ── Hover caption ──
         const caption = document.createElement("span");
         caption.classList.add("gallery-item__caption");
-        caption.textContent = photo.alt;
+        caption.textContent = t(photo.alt);
 
         link.appendChild(img);
         link.appendChild(caption);
@@ -68,8 +86,12 @@ function renderGrid(items) {
         grid.appendChild(item);
     });
 
-    // ── Reinitialise GLightbox after each render ──
-    if (lightbox) lightbox.destroy();
+    // ── Reinitialise GLightbox ──
+    if (lightbox) {
+        lightbox.destroy();
+        lightbox = null;
+    }
+
     lightbox = GLightbox({
         selector: ".glightbox",
         descPosition: "bottom",
@@ -78,7 +100,15 @@ function renderGrid(items) {
         loop: true,
     });
 
-    // ─── GLIGHTBOX — show controls only on image hover ───
+    lightbox.on('open', () => {
+        updateLightboxSlides();
+    });
+
+    lightbox.on('slide_changed', ({ current }) => {
+        updateLightboxSlides();
+    });
+
+    // ─── Show controls only on image hover ───
     document.addEventListener('mouseover', e => {
         const slide = e.target.closest('.gslide-media');
         if (!slide) return;
@@ -94,7 +124,18 @@ function renderGrid(items) {
                 .forEach(el => el.style.opacity = '0');
         }, { once: true });
     });
+}
 
+
+// ─── Update lightbox slide data for current language ──
+function updateLightboxSlides() {
+    document.querySelectorAll('.glightbox').forEach(link => {
+        const photoId = parseInt(link.dataset.photoId);
+        const photo = filtered.find(p => p.id === photoId);
+        if (!photo) return;
+        link.dataset.title = t(photo.alt);
+        link.dataset.description = t(photo.description);
+    });
 }
 
 
@@ -110,14 +151,12 @@ function applyFilters() {
     renderGrid(filtered);
 }
 
-// Toggle active class and update state on click
 document.getElementById("filters").addEventListener("click", e => {
     const btn = e.target.closest(".filter-btn");
     if (!btn) return;
 
     const type = btn.dataset.type;
 
-    // Deactivate siblings in the same group, activate clicked
     btn.closest(".filter-group")
         .querySelectorAll(".filter-btn")
         .forEach(b => b.classList.remove("active"));
