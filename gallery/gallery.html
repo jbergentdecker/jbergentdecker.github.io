@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css" />
+    <meta name="i18n-namespaces" content="ui,gallery" />
+    <meta name="locales-path" content="../assets/locales" />
+    <meta name="components-path" content="../assets/components" />
+
+
     <title>Gallery</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="css/gallery.css" />
@@ -17,26 +23,36 @@
     <!-- ── Filter bar
          data-type groups filters so only one per group is active at a time
          data-filter must match the field values used in photos.json ── -->
-    <section id="filters">
+<section id="filters">
 
-        <div class="filter-group">
-            <span class="filter-label">Activity</span>
-            <button class="filter-btn active" data-type="activity" data-filter="all">All</button>
-            <button class="filter-btn" data-type="activity" data-filter="hiking">Hiking</button>
-            <button class="filter-btn" data-type="activity" data-filter="climbing">Climbing</button>
-            <button class="filter-btn" data-type="activity" data-filter="skiing">Skiing</button>
-        </div>
+    <div class="filter-group">
+        <span class="filter-label" data-i18n="gallery:filters.activity">Activity</span>
+        <button class="filter-btn active" data-type="activity" data-filter="all"
+            data-i18n="gallery:filters.all">All</button>
+        <button class="filter-btn" data-type="activity" data-filter="hiking"
+            data-i18n="gallery:filters.hiking">Hiking</button>
+        <button class="filter-btn" data-type="activity" data-filter="climbing"
+            data-i18n="gallery:filters.climbing">Climbing</button>
+        <button class="filter-btn" data-type="activity" data-filter="skiing"
+            data-i18n="gallery:filters.skiing">Skiing</button>
+    </div>
 
-        <div class="filter-group">
-            <span class="filter-label">Season</span>
-            <button class="filter-btn active" data-type="season" data-filter="all">All</button>
-            <button class="filter-btn" data-type="season" data-filter="spring">Spring</button>
-            <button class="filter-btn" data-type="season" data-filter="summer">Summer</button>
-            <button class="filter-btn" data-type="season" data-filter="autumn">Autumn</button>
-            <button class="filter-btn" data-type="season" data-filter="winter">Winter</button>
-        </div>
+    <div class="filter-group">
+        <span class="filter-label" data-i18n="gallery:filters.season">Season</span>
+        <button class="filter-btn active" data-type="season" data-filter="all"
+            data-i18n="gallery:filters.all">All</button>
+        <button class="filter-btn" data-type="season" data-filter="spring"
+            data-i18n="gallery:filters.spring">Spring</button>
+        <button class="filter-btn" data-type="season" data-filter="summer"
+            data-i18n="gallery:filters.summer">Summer</button>
+        <button class="filter-btn" data-type="season" data-filter="autumn"
+            data-i18n="gallery:filters.autumn">Autumn</button>
+        <button class="filter-btn" data-type="season" data-filter="winter"
+            data-i18n="gallery:filters.winter">Winter</button>
+    </div>
 
-    </section>
+</section>
+
 
     <!-- ── Photo grid (injected by gallery.js) ── -->
     <main id="gallery-grid"></main>
@@ -57,6 +73,8 @@
 
     <!-- ── Footer (injected by footer.js) ── -->
     <div id="footer-placeholder"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
 
     <script src="../assets/js/i18n.js"></script>
     <script src="../assets/js/main.js"></script>

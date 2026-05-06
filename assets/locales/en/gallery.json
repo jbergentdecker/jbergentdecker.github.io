@@ -1,0 +1,14 @@
+{
+    "filters": {
+        "activity": "Activity",
+        "season": "Season",
+        "all": "All",
+        "hiking": "Hiking",
+        "climbing": "Climbing",
+        "skiing": "Skiing",
+        "spring": "Spring",
+        "summer": "Summer",
+        "autumn": "Autumn",
+        "winter": "Winter"
+    }
+}

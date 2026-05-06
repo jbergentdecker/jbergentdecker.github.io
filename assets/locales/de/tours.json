@@ -1,0 +1,22 @@
+{
+    "header": {
+        "title": "Unsere Touren",
+        "subtitle": "Entdecke unsere Bergabenteuer"
+    },
+    "filters": {
+        "all": "Alle",
+        "hiking": "Wandern",
+        "mountaineering": "Bergsteigen",
+        "climbing": "Klettern",
+        "skitouring": "Skitouren",
+        "snowshoeing": "Schneeschuhwandern",
+        "trailrunning": "Trail Running",
+        "cycling": "Radfahren"
+    },
+    "difficulty": {
+        "easy": "Leicht",
+        "moderate": "Mittel",
+        "hard": "Schwer"
+    },
+    "no_results": "Keine Touren gefunden."
+}

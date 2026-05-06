@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="i18n-namespaces" content="ui,tours" />
+    <meta name="locales-path" content="../assets/locales" />
+    <meta name="components-path" content="../assets/components" />
+
+    
     <title>Tours</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="css/tours.css" />
@@ -14,23 +19,23 @@
     <!-- ── Navigation (injected by navbar.js) ── -->
     <div id="navbar-placeholder"></div>
 
-    <!-- ── Page header ── -->
+    <!-- Header -->
     <header class="tours-header">
-        <h1>Our Tours</h1>
-        <p>Explore our mountain adventures</p>
+        <h1 data-i18n="tours:header.title">Our Tours</h1>
+        <p data-i18n="tours:header.subtitle">Explore our mountain adventures</p>
     </header>
 
-    <!-- ── Filter bar
-         data-filter must match the activity tags used in tours.js ── -->
+    <!-- Filter bar -->
     <section class="tours-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="hiking">Hiking</button>
-        <button class="filter-btn" data-filter="mountaineering">Mountaineering</button>
-        <button class="filter-btn" data-filter="climbing">Climbing</button>
-        <button class="filter-btn" data-filter="skitouring">Ski Touring</button>
-        <button class="filter-btn" data-filter="snowshoeing">Snowshoeing</button>
-        <button class="filter-btn" data-filter="trailrunning">Trail Running</button>
-        <button class="filter-btn" data-filter="cycling">Cycling</button>
+        <button class="filter-btn active" data-filter="all" data-i18n="tours:filters.all">All</button>
+        <button class="filter-btn" data-filter="hiking" data-i18n="tours:filters.hiking">Hiking</button>
+        <button class="filter-btn" data-filter="mountaineering"
+            data-i18n="tours:filters.mountaineering">Mountaineering</button>
+        <button class="filter-btn" data-filter="climbing" data-i18n="tours:filters.climbing">Climbing</button>
+        <button class="filter-btn" data-filter="skitouring" data-i18n="tours:filters.skitouring">Ski Touring</button>
+        <button class="filter-btn" data-filter="snowshoeing" data-i18n="tours:filters.snowshoeing">Snowshoeing</button>
+        <button class="filter-btn" data-filter="trailrunning" data-i18n="tours:filters.trailrunning">Trail Running</button>
+        <button class="filter-btn" data-filter="cycling" data-i18n="tours:filters.cycling">Cycling</button>
     </section>
 
     <!-- ── Tour cards (injected by tours.js) ── -->

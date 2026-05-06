@@ -1,0 +1,14 @@
+{
+    "filters": {
+        "activity": "Aktivität",
+        "season": "Jahreszeit",
+        "all": "Alle",
+        "hiking": "Wandern",
+        "climbing": "Klettern",
+        "skiing": "Skifahren",
+        "spring": "Frühling",
+        "summer": "Sommer",
+        "autumn": "Herbst",
+        "winter": "Winter"
+    }
+}

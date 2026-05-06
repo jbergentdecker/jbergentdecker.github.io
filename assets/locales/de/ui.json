@@ -1,0 +1,21 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "gallery": "Galerie",
+        "tours": "Touren",
+        "about": "Über mich"
+    },
+    "badge": {
+        "hiking": "Wandern",
+        "mountaineering": "Bergsteigen",
+        "skitouring": "Skitouren"
+    },
+    "stat": {
+        "distance": "Distanz",
+        "elevation": "Höhenmeter",
+        "duration": "Dauer"
+    },
+    "footer": {
+        "rights": "Alle Rechte vorbehalten"
+    }
+}

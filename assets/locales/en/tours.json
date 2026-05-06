@@ -1,0 +1,22 @@
+{
+    "header": {
+        "title": "Our Tours",
+        "subtitle": "Explore our mountain adventures"
+    },
+    "filters": {
+        "all": "All",
+        "hiking": "Hiking",
+        "mountaineering": "Mountaineering",
+        "climbing": "Climbing",
+        "skitouring": "Ski Touring",
+        "snowshoeing": "Snowshoeing",
+        "trailrunning": "Trail Running",
+        "cycling": "Cycling"
+    },
+    "difficulty": {
+        "easy": "Easy",
+        "moderate": "Moderate",
+        "hard": "Hard"
+    },
+    "no_results": "No tours found."
+}
