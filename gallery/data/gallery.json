@@ -18,8 +18,8 @@
     },
     {
         "id": 2,
-        "src": "großer-schober-von-hinkareck.jpg",
-        "thumb": "großer-schober-von-hinkareck.jpg",
+        "src": "großer-schober-von-hinkareck.JPG",
+        "thumb": "großer-schober-von-hinkareck.JPG",
         "location": "Steiermark",
         "season": "winter",
         "activity": "hiking",
@@ -35,8 +35,8 @@
     },
     {
         "id": 3,
-        "src": "Großerspeikkogel.jpg",
-        "thumb": "Großerspeikkogel.jpg",
+        "src": "Großerspeikkogel.JPG",
+        "thumb": "Großerspeikkogel.JPG",
         "location": "Koralpe",
         "season": "autumn",
         "activity": "hiking",
@@ -52,8 +52,8 @@
     },
     {
         "id": 4,
-        "src": "handalm.jpg",
-        "thumb": "handalm.jpg",
+        "src": "handalm.JPG",
+        "thumb": "handalm.JPG",
         "location": "Koralpe",
         "season": "autumn",
         "activity": "hiking",
@@ -86,8 +86,8 @@
     },
     {
         "id": 6,
-        "src": "rotewand-mixnitz-markierung-winter.jpg",
-        "thumb": "rotewand-mixnitz-markierung-winter.jpg",
+        "src": "rotewand-mixnitz-markierung-winter.JPG",
+        "thumb": "rotewand-mixnitz-markierung-winter.JPG",
         "location": "Mixnitz",
         "season": "winter",
         "activity": "hiking",
