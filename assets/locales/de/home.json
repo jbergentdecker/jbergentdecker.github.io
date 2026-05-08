@@ -1,13 +1,13 @@
 {
     "hero": {
         "eyebrow": "Berge · Fotografie · Abenteuer",
-        "subtitle": "Die alpine Welt festhalten — Gipfel für Gipfel"
+        "subtitle": "Gipfel für Gipfel"
     },
     "about": {
         "label": "Über mich",
         "title": "Die Person hinter der Kamera",
-        "p1": "Willkommen bei JBergentdecker — ein persönlicher Raum gewidmet den Bergen und allem was sie bieten. Ob Sommerweg, alpine Route oder Skitour — jede Unternehmung ist eine Geschichte wert.",
-        "p2": "Hier findest du ein Fotoportfolio meiner Abenteuer in den Alpen und darüber hinaus, sowie detaillierte Tourenberichte mit Karten, Statistiken und ehrlichen Notizen für Gleichgesinnte.",
+        "p1": "Willkommen in meinem persönlichen Raum rund um die Berge und alles, was sie zu bieten haben.",
+        "p2": "Hier findest du ein Portfolio meiner Bergfotografie sowie detaillierte Tourenberichte – von Wanderungen über alpine Routen bis hin zu Skitouren, Radfahren und mehr." ,
         "readMore": "Mehr erfahren",
         "stat1": "Fotos",
         "stat3": "Touren"
@@ -16,7 +16,6 @@
         "label": "Portfolio",
         "title": "Ein Blick in die Alpen",
         "subtitle": "Eine Auswahl aktueller Fotografien",
-        "viewGallery": "Galerie ansehen",
         "cta": "Zur vollständigen Galerie →"
     },
     "toursteaser": {

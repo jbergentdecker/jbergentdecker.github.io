@@ -1,13 +1,13 @@
 {
     "hero": {
         "eyebrow": "Mountains · Photography · Adventure",
-        "subtitle": "Capturing the alpine world — one summit at a time"
+        "subtitle": "One summit at a time"
     },
     "about": {
         "label": "About",
         "title": "The Person Behind the Lens",
-        "p1": "Welcome to JBergentdecker — a personal space dedicated to the mountains and everything they offer. Whether it's a summer hiking trail, a technical alpine route, or a winter ski tour, each outing is a story worth telling.",
-        "p2": "Here you'll find a photography portfolio from my adventures across the Alps and beyond, alongside detailed tour reports with maps, stats and honest notes for fellow mountain enthusiasts.",
+        "p1": "Welcome to my personal space dedicated to the mountains and everything they offer.",
+        "p2": "Here you'll find a photography portfolio of my various peregrinations (mostly) in the mountains as well as detailed tour reports whether it be a summer hike, an alpine route, a ski tour or a cycling adventure and more.",
         "readMore": "Read More",
         "stat1": "Photos",
         "stat3": "Tours"
@@ -16,7 +16,6 @@
         "label": "Portfolio",
         "title": "A Glimpse of the Alps",
         "subtitle": "A selection of recent photographs",
-        "viewGallery": "View Gallery",
         "cta": "Explore Full Gallery →"
     },
     "toursteaser": {

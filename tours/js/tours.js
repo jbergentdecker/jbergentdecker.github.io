@@ -40,7 +40,7 @@ function renderTours(tours) {
                 class="tour-card-image"
                 src="${tour.cover_image}"
                 alt="${localize(tour.title)}"
-                onerror="this.src='../assets/images/placeholder.jpg'"
+                onerror="this.src='../assets/images/gallery/ameringkogel-unter-alm.jpg'"
             />
             <div class="tour-card-body">
                 <div class="tour-card-title">${localize(tour.title)}</div>

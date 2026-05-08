@@ -1,40 +1,24 @@
 [
     {
-        "id": "template1_en",
+        "id": "packalpe_traverse",
         "title": {
-            "en": "Großglockner via Normalweg",
-            "de": "Großglockner über Normalweg"
+            "en": "Traverse of the Packalpe",
+            "de": "Packalpe Traverse"
         },
         "location": {
-            "en": "Hohe Tauern, Austria",
-            "de": "Hohe Tauern, Österreich"
+            "en": "Packalpe, Styria, Austria",
+            "de": "Packalpe, Steiermark, Österreich"
         },
-        "date": "2024-07-14",
-        "activity": "mountaineering",
-        "difficulty": "hard",
-        "distance": 12.5,
-        "elevation_gain": 1400,
-        "duration": "6h 30min",
-        "cover_image": "../assets/images/gallery/1.jpg",
-        "page": {
-            "en": "pages/template1.html",
-            "de": "pages/template1_de.html"
-        }
-    },
-    {
-        "id": "template2",
-        "title": "Schafberg Hiking Tour",
-        "date": "2024-06-01",
-        "location": "Salzkammergut, Austria",
+        "date": "2025-10-21",
         "activity": "hiking",
-        "difficulty": "moderate",
-        "distance": 8.2,
-        "elevation_gain": 780,
-        "duration": "4h 00min",
-        "description": "Beautiful hike with views over the Wolfgangsee.",
-        "cover_image": "../assets/images/gallery/8.jpg",
-        "map_preview": "../assets/images/tours/schafberg-map.jpg",
-        "gpx_file": "../assets/gpx/schafberg.gpx",
-        "page": "pages/template2.html"
+        "difficulty": "hard",
+        "distance": 30,
+        "elevation_gain": 2100,
+        "duration": "6h 38min",
+        "cover_image": "../assets/images/tours/packalpe_traverse/größenberg.jpg",
+        "page": {
+            "en": "pages/packalpe_traverse.html",
+            "de": "pages/packalpe_traverse_de.html"
+        }
     }
 ]
