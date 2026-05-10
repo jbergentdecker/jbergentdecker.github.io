@@ -235,27 +235,31 @@
 
 .showcase__item-overlay {
     position: absolute;
-    inset: 0;
-    background: rgba(26, 26, 26, 0);
+    bottom: 0;
+    /* changed from inset: 0 */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.55);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
     transition: var(--transition);
+    opacity: 0;
 }
 
 .showcase__item-overlay span {
-    color: var(--text-primary);
-    font-size: 0.85rem;
+    color: #fff;
+    font-size: 0.82rem;
     font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    padding: 0.6rem 0.75rem;
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(4px);
     transition: var(--transition);
 }
 
 .showcase__item:hover .showcase__item-overlay {
-    background: rgba(26, 26, 26, 0.5);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.55);
+    /* remove the old rule */
 }
 
 .showcase__item:hover .showcase__item-overlay span {

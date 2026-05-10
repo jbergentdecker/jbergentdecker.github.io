@@ -15,10 +15,10 @@
         "distance": 30,
         "elevation_gain": 2100,
         "duration": "6h 38min",
-        "cover_image": "../assets/images/tours/packalpe_traverse/größenberg.jpg",
+        "cover_image": "/assets/images/tours/packalpe_traverse/größenberg.jpg",
         "page": {
-            "en": "pages/packalpe_traverse.html",
-            "de": "pages/packalpe_traverse_de.html"
+            "en": "/tours/pages/packalpe_traverse.html",
+            "de": "/tours/pages/packalpe_traverse_de.html"
         }
     }
 ]
