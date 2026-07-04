@@ -117,10 +117,19 @@ async function setLang(lang) {
 
 // ── Public API ─────────────────────────────────────────
 window.i18n = {
-    t: (keyPath) => getKey(currentLang, keyPath) ?? keyPath,
+    t: (keyPath, vars = {}) => {
+        let text = getKey(currentLang, keyPath);
+        if (text == null) return null;
+        Object.keys(vars).forEach(k => {
+            text = text.replace(new RegExp(`{{\\s*${k}\\s*}}`, 'g'), vars[k]);
+        });
+        return text;
+    },
     get currentLang() { return currentLang; },
     ready: false
 };
+
+
 
 
 // ── Init ───────────────────────────────────────────────

@@ -1,0 +1,25 @@
+{
+    "articles": [
+        {
+            "id": "test_article",
+            "title": {
+                "en": "My First Article",
+                "de": "Mein erster Artikel"
+            },
+            "date": "2025-10-21",
+            "cover": "/assets/images/profile_2.jpg",
+            "tags": [
+                "reflection",
+                "gear"
+            ],
+            "excerpt": {
+                "en": "A short description of what this article is about.",
+                "de": "Eine kurze Beschreibung, worum es in diesem Artikel geht."
+            },
+            "content": {
+                "en": "/articles/content/en/test_article.md",
+                "de": "/articles/content/de/test_article_de.md"
+            }
+        }
+    ]
+}

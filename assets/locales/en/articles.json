@@ -1,0 +1,13 @@
+{
+    "header": {
+        "title": "Articles"
+    },
+    "tags": {
+        "trip-report": "Trip Report",
+        "gear": "Gear",
+        "technique": "Technique",
+        "reflection": "Reflection"
+    },
+    "read_more": "Read more →",
+    "reading_time": "{{minutes}} min read"
+}

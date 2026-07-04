@@ -16,6 +16,7 @@ function loadNavbar() {
                     <li><a href="/index.html"           data-i18n="nav.home">Home</a></li>
                     <li><a href="/gallery/gallery.html"  data-i18n="nav.gallery">Gallery</a></li>
                     <li><a href="/tours/tours.html"      data-i18n="nav.tours">Tours</a></li>
+                    <li><a href="/articles/articles.html" data-i18n="nav.articles">Articles</a></li>
                     <li><a href="/pages/about.html"      data-i18n="nav.about">About</a></li>
                 </ul>
                 <div class="navbar__right">

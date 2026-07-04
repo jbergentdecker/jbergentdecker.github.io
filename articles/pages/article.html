@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="locales-path" content="/assets/locales" />
+    <meta name="i18n-namespaces" content="ui,articles">
+    <title id="page-title">Article</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/articles/css/article.css">
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <main class="article-main">
+        <article class="article-container">
+
+            <!-- COVER IMAGE -->
+            <div class="article-hero" id="article-hero"></div>
+
+            <!-- META -->
+            <header class="article-header">
+                <div class="article-tags" id="article-tags"></div>
+                <h1 class="article-title" id="article-title"></h1>
+                <div class="article-meta">
+                    <span id="article-date"></span>
+                    <span class="meta-separator">·</span>
+                    <span id="reading-time"></span>
+                </div>
+            </header>
+
+            <!-- MARKDOWN CONTENT -->
+            <div class="article-body" id="article-body">
+                <div class="article-loading" id="article-loading">Loading…</div>
+            </div>
+
+        </article>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    <script src="/articles/js/article.js"></script>
+</body>
+
+</html>

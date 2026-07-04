@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="i18n-namespaces" content="ui,articles" />
+    <meta name="locales-path" content="../assets/locales" />
+    <meta name="components-path" content="../assets/components" />
+
+    <title>Articles</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+</head>
+
+<body>
+
+    <!-- Navigation (injected by navbar.js) -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Header -->
+    <header class="articles-header">
+        <h1 data-i18n="articles:header.title">Articles</h1>
+    </header>
+
+    <!-- Filter bar -->
+    <section class="articles-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="trip-report">Trip Report</button>
+        <button class="filter-btn" data-filter="gear">Gear</button>
+        <button class="filter-btn" data-filter="technique">Technique</button>
+        <button class="filter-btn" data-filter="reflection">Reflection</button>
+    </section>
+
+    <!-- Article cards (injected by articles.js) -->
+    <main class="articles-grid" id="articles-grid"></main>
+
+    <!-- Footer (injected by footer.js) -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/footer.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="js/articles.js"></script>
+
+</body>
+
+</html>

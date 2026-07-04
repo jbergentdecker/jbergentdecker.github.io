@@ -3,11 +3,15 @@
         "pageTitle": "About Me",
         "title": "About Me",
         "whoTitle": "Who am I?",
-        "bio1": "My name is JB, I grew up in France where I studied Electronics and Embedded Systems Engineering.",
-        "bio2": "I first discovered the mountains during my university years in the French Alps, but it's only when I moved to Austria as an engineer that I really started spending serious time outdoors — hiking, skiing, climbing, and chasing light with a camera.",
-        "bio3": "What started as a hobby has become a real passion. If I could, I'd be out there every single day.",
-        "bio4": "I've now lived in Austria for about 5 years and created this website to share some of its hidden beauty — the spots that often go unnoticed beyond the famous peaks and routes.",
-        "bio5": "I hope you enjoy it!",
+        "bio1": "My name is JB (Jean-Baptiste), I grew up in France and discovered the mountains while studying electronic engineering in Grenoble. What started with hiking quickly became a central part of my life.",
+        "bio2": "After moving to Graz to work as an engineer, spending time in the mountains turned out to be the best way to discover this new country—its landscapes, its people, and even its language. It played a big role in making me feel at home there.",
+        "bio3": "From hiking, I naturally moved into climbing and more technical terrain, and I’ve been building my experience there ever since.",
+        "bio4": "Sport has always been part of my life. I trained and competed in judo for many years, alongside other activities like running, tennis, and cycling. After a break before university, I gradually came back to it through endurance sports, and eventually into the mountains.",
+        "bio5": "I’m particularly drawn to endurance and long days—multi-day hikes, traverses, and routes that require moving efficiently over time. Not just reaching a point, but following a line from start to finish. For me, the summit is only part of the journey. What matters more is the path you take and how you move through it.",
+        "bio6": "I prefer quieter routes over popular ones, and I choose to move using simple means—on foot, by bike, or with public transport. Not as a constraint, but as a way to stay connected to the experience from beginning to end.",
+        "bio7": "Photography developed alongside this. I mainly focus on mountain landscapes and people in them, capturing moments that reflect the atmosphere of a place and the experience of being there. It’s also a way to give something back—images that people can take with them after the tour.",
+        "bio8": "I’m currently a certified hiking guide with the Alpenverein, leading mainly multi-day tours. I also enjoy teaching and sharing knowledge, and I’m working towards expanding my skills in mountaineering and guiding.",
+        "bio9": "Whether through guiding or photography, my goal is to create real experiences: days that feel like an adventure, and that stay with you long after you’re back home.",
         "contactLabel": "Get in touch"
     }
 }
