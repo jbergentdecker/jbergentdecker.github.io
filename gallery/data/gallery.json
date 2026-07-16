@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "src": "johannisberg.jpg",
-        "thumb": "johannisberg.jpg",
+        "src": "Johannisberg/johannisberg.jpg",
+        "thumb": "Johannisberg/johannisberg.jpg",
         "location": "Johannisberg",
         "season": "summer",
         "activity": "mountaineering",
@@ -12,14 +12,31 @@
             "de": "Johannisberg (Salzburg/Kärnten)"
         },
         "description": {
+            "en": "View of Johannisberg from Oberwalderhütte. (August)",
+            "de": "Ansicht des Johannisbergs von der Oberwalderhütte. (August)"
+        }
+    },
+    {
+        "id": 2,
+        "src": "Johannisberg/johannisberg_bw.jpg",
+        "thumb": "Johannisberg/johannisberg_bw.jpg",
+        "location": "Johannisberg",
+        "season": "summer",
+        "activity": "mountaineering",
+        "date": "2025-08-03",
+        "alt": {
+            "en": "Johannisberg in black and white (Salzburg/Karinthia)",
+            "de": "Johannisberg im Schwarz-Weiß (Salzburg/Kärnten)"
+        },
+        "description": {
             "en": "Black and White View of Johannisberg from Oberwalderhütte. (August)",
             "de": "Schwarz-Weiß-Ansicht des Johannisbergs von der Oberwalderhütte. (August)"
         }
     },
     {
-        "id": 2,
-        "src": "großer-schober-von-hinkareck.JPG",
-        "thumb": "großer-schober-von-hinkareck.JPG",
+        "id": 3,
+        "src": "Seckauer-Alpen/großer-schober-von-hinkareck.JPG",
+        "thumb": "Seckauer-Alpen/großer-schober-von-hinkareck.JPG",
         "location": "Steiermark",
         "season": "winter",
         "activity": "hiking",
@@ -34,9 +51,9 @@
         }
     },
     {
-        "id": 3,
-        "src": "großerspeikkogel.JPG",
-        "thumb": "großerspeikkogel.JPG",
+        "id": 4,
+        "src": "Koralpe/großerspeikkogel.JPG",
+        "thumb": "Koralpe/großerspeikkogel.JPG",
         "location": "Koralpe",
         "season": "autumn",
         "activity": "hiking",
@@ -51,9 +68,9 @@
         }
     },
     {
-        "id": 4,
-        "src": "handalm.JPG",
-        "thumb": "handalm.JPG",
+        "id": 5,
+        "src": "Koralpe/handalm.JPG",
+        "thumb": "Koralpe/handalm.JPG",
         "location": "Koralpe",
         "season": "autumn",
         "activity": "hiking",
@@ -68,9 +85,9 @@
         }
     },
     {
-        "id": 5,
-        "src": "hohe-riffle-johannisberg.jpg",
-        "thumb": "hohe-riffle-johannisberg.jpg",
+        "id": 6,
+        "src": "Johannisberg/hohe-riffle-johannisberg.jpg",
+        "thumb": "Johannisberg/hohe-riffle-johannisberg.jpg",
         "location": "Johannisberg",
         "season": "summer",
         "activity": "mountaineering",
@@ -85,9 +102,9 @@
         }
     },
     {
-        "id": 6,
-        "src": "rotewand-mixnitz-markierung-winter.JPG",
-        "thumb": "rotewand-mixnitz-markierung-winter.JPG",
+        "id": 7,
+        "src": "Grazer-Bergland/rotewand-mixnitz-markierung-winter.JPG",
+        "thumb": "Grazer-Bergland/rotewand-mixnitz-markierung-winter.JPG",
         "location": "Mixnitz",
         "season": "winter",
         "activity": "hiking",
@@ -97,8 +114,111 @@
             "de": "Mixnitz (Steiermark)"
         },
         "description": {
-            "en": "Frozen Hiking sign in winter (December)",
-            "de": "Vereistes Wanderschild im Winter (Dezember)"
+            "en": "Frozen Hiking sign on the way to Rotte Wand in Mixnitz (December)",
+            "de": "Vereistes Wanderschild auf dem Weg zum Rotten Wand in Mixnitz (Dezember)"
+        }
+    },
+    {
+        "id": 8,
+        "src": "Grazer-Bergland/frozen-trees.JPG",
+        "thumb": "Grazer-Bergland/frozen-trees.JPG",
+        "location": "Mixnitz",
+        "season": "winter",
+        "activity": "hiking",
+        "date": "2024-12-14",
+        "alt": {
+            "en": "Mixnitz (Styria)",
+            "de": "Mixnitz (Steiermark)"
+        },
+        "description": {
+            "en": "Frozen Trees on the way to Rotte Wand in Mixnitz (December)",
+            "de": "Vereiste Bäume auf dem Weg zum Rotten Wand in Mixnitz (Dezember)"
+        }
+    },
+    {
+        "id": 9,
+        "src": "Johannisberg/oberwalderhutte.jpg",
+        "thumb": "Johannisberg/oberwalderhutte.jpg",
+        "location": "Johannisberg",
+        "season": "summer",
+        "activity": "mountaineering",
+        "date": "2025-08-03",
+        "alt": {
+            "en": "Oberwalderhütte - Johannisberg (Salzburg/Karinthia)",
+            "de": "Oberwalderhütte - Johannisberg (Salzburg/Kärnten)"
+        },
+        "description": {
+            "en": "Back view of Oberwalderhütte. (August)",
+            "de": "Rückansicht der Oberwalderhütte. (August)"
+        }
+    },
+    {
+        "id": 10,
+        "src": "Johannisberg/großglockner.jpg",
+        "thumb": "Johannisberg/großglockner.jpg",
+        "location": "Johannisberg",
+        "season": "summer",
+        "activity": "mountaineering",
+        "date": "2025-08-03",
+        "alt": {
+            "en": "Großglockner (Salzburg/Karinthia)",
+            "de": "Großglockner (Salzburg/Kärnten)"
+        },
+        "description": {
+            "en": "View of Großglockner from Oberwalderhütte. (August)",
+            "de": "Blick auf Großglockner von der Oberwalderhütte. (August)"
+        }
+    },
+    {
+        "id": 11,
+        "src": "Johannisberg/snow-cover_bw.jpg",
+        "thumb": "Johannisberg/snow-cover_bw.jpg",
+        "location": "Johannisberg",
+        "season": "summer",
+        "activity": "mountaineering",
+        "date": "2025-08-03",
+        "alt": {
+            "en": "Snow Cover (Salzburg/Karinthia)",
+            "de": "Schneedecke (Salzburg/Kärnten)"
+        },
+        "description": {
+            "en": "Snow Cover on the Johannisberg. (August)",
+            "de": "Schneedecke auf dem Johannisberg. (August)"
+        }
+    },
+    {
+        "id": 12,
+        "src": "Seckauer-Alpen/hinkareck.JPG",
+        "thumb": "Seckauer-Alpen/hinkareck.JPG",
+        "location": "Seckauer-Alpen",
+        "season": "winter",
+        "activity": "mountaineering",
+        "date": "2025-12-13",
+        "alt": {
+            "en": "Hinkareck (Seckauer-Alpen)",
+            "de": "Hinkareck (Seckauer-Alpen)"
+        },
+        "description": {
+            "en": "View of Hinkareck from Antonikreuz. (December)",
+            "de": "Blick auf Hinkareck vom Antonikreuz. (Dezember)"
+        }
+    },
+    {
+        "id": 13,
+        "src": "Seckauer-Alpen/antonikreuz.JPG",
+        "thumb": "Seckauer-Alpen/antonikreuz.JPG",
+        "location": "Seckauer-Alpen",
+        "season": "winter",
+        "activity": "mountaineering",
+        "date": "2025-12-13",
+        "alt": {
+            "en": "Antonikreuz (Seckauer-Alpen)",
+            "de": "Antonikreuz (Seckauer-Alpen)"
+        },
+        "description": {
+            "en": "Direction Seekaralm from Antonikreuz. (December)",
+            "de": "Richtung Seekaralm vom Antonikreuz. (Dezember)"
         }
     }
+
 ]
