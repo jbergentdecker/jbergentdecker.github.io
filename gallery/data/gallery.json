@@ -35,8 +35,8 @@
     },
     {
         "id": 3,
-        "src": "Seckauer-Alpen/großer-schober-von-hinkareck.JPG",
-        "thumb": "Seckauer-Alpen/großer-schober-von-hinkareck.JPG",
+        "src": "Seckauer-Alpen/großer-schober-von-hinkareck.jpg",
+        "thumb": "Seckauer-Alpen/großer-schober-von-hinkareck.jpg",
         "location": "Steiermark",
         "season": "winter",
         "activity": "hiking",
@@ -52,8 +52,8 @@
     },
     {
         "id": 4,
-        "src": "Koralpe/großerspeikkogel.JPG",
-        "thumb": "Koralpe/großerspeikkogel.JPG",
+        "src": "Koralpe/großerspeikkogel.jpg",
+        "thumb": "Koralpe/großerspeikkogel.jpg",
         "location": "Koralpe",
         "season": "autumn",
         "activity": "hiking",
@@ -69,8 +69,8 @@
     },
     {
         "id": 5,
-        "src": "Koralpe/handalm.JPG",
-        "thumb": "Koralpe/handalm.JPG",
+        "src": "Koralpe/handalm.jpg",
+        "thumb": "Koralpe/handalm.jpg",
         "location": "Koralpe",
         "season": "autumn",
         "activity": "hiking",
@@ -103,8 +103,8 @@
     },
     {
         "id": 7,
-        "src": "Grazer-Bergland/rotewand-mixnitz-markierung-winter.JPG",
-        "thumb": "Grazer-Bergland/rotewand-mixnitz-markierung-winter.JPG",
+        "src": "Grazer-Bergland/rotewand-mixnitz-markierung-winter.jpg",
+        "thumb": "Grazer-Bergland/rotewand-mixnitz-markierung-winter.jpg",
         "location": "Mixnitz",
         "season": "winter",
         "activity": "hiking",
@@ -120,8 +120,8 @@
     },
     {
         "id": 8,
-        "src": "Grazer-Bergland/frozen-trees.JPG",
-        "thumb": "Grazer-Bergland/frozen-trees.JPG",
+        "src": "Grazer-Bergland/frozen-trees.jpg",
+        "thumb": "Grazer-Bergland/frozen-trees.jpg",
         "location": "Mixnitz",
         "season": "winter",
         "activity": "hiking",
@@ -188,8 +188,8 @@
     },
     {
         "id": 12,
-        "src": "Seckauer-Alpen/hinkareck.JPG",
-        "thumb": "Seckauer-Alpen/hinkareck.JPG",
+        "src": "Seckauer-Alpen/hinkareck.jpg",
+        "thumb": "Seckauer-Alpen/hinkareck.jpg",
         "location": "Seckauer-Alpen",
         "season": "winter",
         "activity": "mountaineering",
@@ -205,8 +205,8 @@
     },
     {
         "id": 13,
-        "src": "Seckauer-Alpen/antonikreuz.JPG",
-        "thumb": "Seckauer-Alpen/antonikreuz.JPG",
+        "src": "Seckauer-Alpen/antonikreuz.jpg",
+        "thumb": "Seckauer-Alpen/antonikreuz.jpg",
         "location": "Seckauer-Alpen",
         "season": "winter",
         "activity": "mountaineering",
@@ -220,5 +220,4 @@
             "de": "Richtung Seekaralm vom Antonikreuz. (Dezember)"
         }
     }
-
 ]
