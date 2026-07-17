@@ -5,7 +5,7 @@
 
 const GALLERY_JSON = "gallery/data/gallery.json";
 const IMAGES_BASE = "assets/images/gallery/";
-const PICK_COUNT = 5;
+const PICK_COUNT = 6;
 
 // ── Helpers ────────────────────────────────────────────
 function pickRandom(arr, n) {
