@@ -1,23 +1,6 @@
 [
     {
         "id": 1,
-        "src": "Johannisberg/johannisberg.jpg",
-        "thumb": "Johannisberg/johannisberg.jpg",
-        "location": "Johannisberg",
-        "season": "summer",
-        "activity": "mountaineering",
-        "date": "2025-08-03",
-        "alt": {
-            "en": "Johannisberg (Salzburg/Karinthia)",
-            "de": "Johannisberg (Salzburg/Kärnten)"
-        },
-        "description": {
-            "en": "View of Johannisberg from Oberwalderhütte. (August)",
-            "de": "Ansicht des Johannisbergs von der Oberwalderhütte. (August)"
-        }
-    },
-    {
-        "id": 2,
         "src": "Johannisberg/hohe-riffle-johannisberg.jpg",
         "thumb": "Johannisberg/hohe-riffle-johannisberg.jpg",
         "location": "Johannisberg",
@@ -33,6 +16,23 @@
             "de": "Blick auf Hohe Riffle, neben dem Hauptgipfel des Johannisbergs, von der Oberwalderhütte. (August)"
         }
     },
+    {
+        "id": 2,
+        "src": "Johannisberg/me_and_großglockner.jpg",
+        "thumb": "Johannisberg/me_and_großglockner.jpg",
+        "location": "Johannisberg",
+        "season": "summer",
+        "activity": "mountaineering",
+        "date": "2025-08-03",
+        "alt": {
+            "en": "Me and Großglockner (Salzburg/Karinthia)",
+            "de": "Ich und Großglockner (Salzburg/Kärnten)"
+        },
+        "description": {
+            "en": "View of me and Großglockner from the Oberwalderhütte. (August)",
+            "de": "Blick auf Großglockner von der Oberwalderhütte. (August)"
+        }
+    },    
     {
         "id": 3,
         "src": "Johannisberg/großglockner.jpg",

@@ -12,5 +12,9 @@
         "summer": "Summer",
         "autumn": "Autumn",
         "winter": "Winter"
+    },
+    "header": {
+        "title": "Gallery",
+        "subtitle": "Photos optimized for fast loading"
     }
 }

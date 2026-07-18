@@ -12,5 +12,9 @@
         "summer": "Sommer",
         "autumn": "Herbst",
         "winter": "Winter"
+    },
+    "header": {
+        "title": "Galerie",
+        "subtitle": " Fotos optimiert für schnelles Laden"
     }
 }
