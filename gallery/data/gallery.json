@@ -399,12 +399,12 @@
         "activity": "hiking",
         "date": "2026-05-23",
         "alt": {
-            "en": "Seespitz (Karinthia)",
-            "de": "Seespitz (Kärnten)"
+            "en": "Seespitz (Karinthia/Styria)",
+            "de": "Seespitz (Kärnten/Steiermark)"
         },
         "description": {
-            "en": "Seespitz in Karinthia on the way to Grilliitschhütte (May)",
-            "de": "Blick auf Seespitz in Kärnten auf dem Weg zur Grilliitschhütte (Mai)"
+            "en": "Seespitz in Karinthia/Styria on the way to Grilliitschhütte (May)",
+            "de": "Blick auf Seespitz in Kärnten/Steiermark auf dem Weg zur Grilliitschhütte (Mai)"
         }
     },
     {
@@ -416,8 +416,8 @@
         "activity": "hiking",
         "date": "2026-05-23",
         "alt": {
-            "en": "Seespitz (Karinthia)",
-            "de": "Seespitz (Kärnten)"
+            "en": "Seespitz (Karinthia/Styria)",
+            "de": "Seespitz (Kärnten/Steiermark)"
         },
         "description": {
             "en": "Moon on the Seespitz (May)",
@@ -433,8 +433,8 @@
         "activity": "hiking",
         "date": "2026-05-23",
         "alt": {
-            "en": "Seespitz (Karinthia)",
-            "de": "Seespitz (Kärnten)"
+            "en": "Seespitz (Karinthia/Styria)",
+            "de": "Seespitz (Kärnten/Steiermark)"
         },
         "description": {
             "en": "Moon on the Seespitz (May)",
@@ -450,8 +450,8 @@
         "activity": "hiking",
         "date": "2026-05-23",
         "alt": {
-            "en": "Seespitz (Karinthia)",
-            "de": "Seespitz (Kärnten)"
+            "en": "Seespitz (Karinthia/Styria)",
+            "de": "Seespitz (Kärnten/Steiermark)"
         },
         "description": {
             "en": "Airplain in the sky on the Seespitz (May)",
@@ -518,8 +518,8 @@
         "activity": "hiking",
         "date": "2026-05-24",
         "alt": {
-            "en": "Weinebene (Karinthia)",
-            "de": "Weinebene (Kärnten)"
+            "en": "Weinebene (Karinthia/Styria)",
+            "de": "Weinebene (Kärnten/Steiermark)"
         },
         "description": {
             "en": "Weinebene looking towards Großer Speikkogel (May)",
@@ -535,8 +535,8 @@
         "activity": "hiking",
         "date": "2026-05-24",
         "alt": {
-            "en": "Weinebene (Karinthia)",
-            "de": "Weinebene (Kärnten)"
+            "en": "Weinebene (Karinthia/Styria)",
+            "de": "Weinebene (Kärnten/Steiermark)"
         },
         "description": {
             "en": "Weinebene looking towards Handalm (May)",
@@ -545,8 +545,25 @@
     },
     {
         "id": 33,
-        "src": "Koralpe/handalm.jpg",
-        "thumb": "Koralpe/handalm.jpg",
+        "src": "Koralpe/handalm_background_großerspeikkogel.jpg",
+        "thumb": "Koralpe/handalm_background_großerspeikkogel.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-24",
+        "alt": {
+            "en": "Handalm (Styria)",
+            "de": "Handalm (Steiermark)"
+        },
+        "description": {
+            "en": "Direction Deutschlandsberg with a background view on Großer Speikkogel from Handalm in Styria (May)",
+            "de": "Richtung Deutschlandsberg mit Blick auf den Großen Speikkogel vom Handalm in Steiermark (Mai)"
+        }
+    },    
+    {
+        "id": 34,
+        "src": "Koralpe/handalm_1.jpg",
+        "thumb": "Koralpe/handalm_1.jpg",
         "location": "Koralpe",
         "season": "autumn",
         "activity": "hiking",
@@ -559,5 +576,158 @@
             "en": "View of the wind turbines on the Handalm in Styria (October)",
             "de": "Blick auf die Windkraftanlagen auf dem Handalm in Steiermark (Oktober)"
         }
-    }
+    },
+    {
+        "id": 35,
+        "src": "Koralpe/handalm_2.jpg",
+        "thumb": "Koralpe/handalm_2.jpg",
+        "location": "Koralpe",
+        "season": "autumn",
+        "activity": "hiking",
+        "date": "2023-10-28",
+        "alt": {
+            "en": "Handalm (Styria)",
+            "de": "Handalm (Steiermark)"
+        },
+        "description": {
+            "en": "View of the wind turbines on the Handalm in Styria (October)",
+            "de": "Blick auf die Windkraftanlagen auf dem Handalm in Steiermark (Oktober)"
+        }
+    },
+    {
+        "id": 36,
+        "src": "Koralpe/handalm_from_ground.jpg",
+        "thumb": "Koralpe/handalm_from_ground.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-24",
+        "alt": {
+            "en": "Handalm (Styria)",
+            "de": "Handalm (Steiermark)"
+        },
+        "description": {
+            "en": "View from the ground of the wind turbines on the Handalm in Styria (May)",
+            "de": "Blick von unten auf die Windkraftanlagen auf dem Handalm in Steiermark (Mai)"
+        }
+    },
+    {
+        "id": 37,
+        "src": "Koralpe/wind-turbine_handalm_1.jpg",
+        "thumb": "Koralpe/wind-turbine_handalm_1.jpg",
+        "location": "Koralpe",
+        "season": "autumn",
+        "activity": "hiking",
+        "date": "2023-10-28",
+        "alt": {
+            "en": "Handalm (Styria)",
+            "de": "Handalm (Steiermark)"
+        },
+        "description": {
+            "en": "One of the many wind turbines on the Handalm in Styria (October)",
+            "de": "Eine der vielen Windkraftanlagen auf dem Handalm in Steiermark (Oktober)"
+        }
+    },    
+    {
+        "id": 38,
+        "src": "Koralpe/wind-turbine_handalm_2.jpg",
+        "thumb": "Koralpe/wind-turbine_handalm_2.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-24",
+        "alt": {
+            "en": "Handalm (Styria)",
+            "de": "Handalm (Steiermark)"
+        },
+        "description": {
+            "en": "One of the many wind turbines on the Handalm in Styria (May)",
+            "de": "Eine der vielen Windkraftanlagen auf dem Handalm in Steiermark (Mai)"
+        }
+    },
+    {
+        "id": 39,
+        "src": "Koralpe/wind-turbine_handalm_3.jpg",
+        "thumb": "Koralpe/wind-turbine_handalm_3.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-24",
+        "alt": {
+            "en": "Handalm (Styria)",
+            "de": "Handalm (Steiermark)"
+        },
+        "description": {
+            "en": "One of the many wind turbines on the Handalm in Styria (May)",
+            "de": "Eine der vielen Windkraftanlagen auf dem Handalm in Steiermark (Mai)"
+        }
+    },
+    {
+        "id": 40,
+        "src": "Koralpe/koralpe_large.jpg",
+        "thumb": "Koralpe/koralpe_large.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-24",
+        "alt": {
+            "en": "Weinebenestraße (Styria)",
+            "de": "Weinebenestraße (Steiermark)"
+        },
+        "description": {
+            "en": "Großer Speikkogel (left) and Handalm (right) from Weinebenestraße in Styria in direction of Deutschlandsberg (May)",
+            "de": "Großer Speikkogel (left) and Handalm (right) from Weinebenestraße in Steiermark in Richtung Deutschlandsberg (Mai)"
+        }
+    },
+    {
+        "id": 41,
+        "src": "Koralpe/großerspeikkogel_kreuz_5.jpg",
+        "thumb": "Koralpe/großerspeikkogel_kreuz_5.jpg",
+        "location": "Koralpe",
+        "season": "autumn",
+        "activity": "hiking",
+        "date": "2023-10-27",
+        "alt": {
+            "en": "Großer Speikkogel (Karinthia)",
+            "de": "Großer Speikkogel (Steiermark)"
+        },
+        "description": {
+            "en": "Großer Speikkogel Renovation sign with a background view on the Julian Alps in Slovenia (October)",
+            "de": "Großer Speikkogel Renovierungsschild mit Blick auf die Julianischen Alpen in Slowenien im Hintergrund (Oktober)"
+        }
+    },
+    {
+        "id": 42,
+        "src": "Koralpe/house_in_sud_steiermark.jpg",
+        "thumb": "Koralpe/house_in_sud_steiermark.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-22",
+        "alt": {
+            "en": "Hadernigg (Styria)",
+            "de": "Hadernigg (Steiermark)"
+        },
+        "description": {
+            "en": "House in Hadernigg (near Deutschlandsberg) on the way to Soboth (May)",
+            "de": "Haus in Hadernigg (bei Deutschlandsberg) auf dem Weg nach Soboth (Mai)"
+        }
+    },
+    {
+        "id": 43,
+        "src": "Koralpe/old-tree_deautschlandsberg_forest.jpg",
+        "thumb": "Koralpe/old-tree_deautschlandsberg_forest.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-24",
+        "alt": {
+            "en": "Glashütten-Trahütten (Styria)",
+            "de": "Glashütten-Trahütten (Steiermark)"
+        },
+        "description": {
+            "en": "Old tree in Deutschlandsberg forest between Glashütten and Trahütten (May)",
+            "de": "Alter Baum im Deutschlandsberger Wald zwischen Glashütten und Trahütten (Mai)"
+        }
+    }    
 ]
