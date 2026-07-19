@@ -12,8 +12,8 @@
             "de": "Hohe Riffle am Johannisberg (Salzburg/Kärnten)"
         },
         "description": {
-            "en": "View of Hohe Riffle, next to the main summit of the Johannisberg, from the Oberwalderhütte. (August)",
-            "de": "Blick auf Hohe Riffle, neben dem Hauptgipfel des Johannisbergs, von der Oberwalderhütte. (August)"
+            "en": "View of Hohe Riffle, next to the main summit of the Johannisberg, from the Oberwalderhütte (August)",
+            "de": "Blick auf Hohe Riffle, neben dem Hauptgipfel des Johannisbergs, von der Oberwalderhütte (August)"
         }
     },
     {
@@ -29,8 +29,8 @@
             "de": "Ich und Großglockner (Salzburg/Kärnten)"
         },
         "description": {
-            "en": "View of me and Großglockner from the Oberwalderhütte. (August)",
-            "de": "Blick auf Großglockner von der Oberwalderhütte. (August)"
+            "en": "View of me and Großglockner from the Oberwalderhütte (August)",
+            "de": "Blick auf Großglockner von der Oberwalderhütte (August)"
         }
     },    
     {
@@ -46,8 +46,8 @@
             "de": "Großglockner (Salzburg/Kärnten)"
         },
         "description": {
-            "en": "View of Großglockner from Oberwalderhütte. (August)",
-            "de": "Blick auf Großglockner von der Oberwalderhütte. (August)"
+            "en": "View of Großglockner from Oberwalderhütte (August)",
+            "de": "Blick auf Großglockner von der Oberwalderhütte (August)"
         }
     },
     {
@@ -63,8 +63,8 @@
             "de": "Oberwalderhütte - Johannisberg (Salzburg/Kärnten)"
         },
         "description": {
-            "en": "Back view of Oberwalderhütte. (August)",
-            "de": "Rückansicht der Oberwalderhütte. (August)"
+            "en": "Back view of Oberwalderhütte (August)",
+            "de": "Rückansicht der Oberwalderhütte (August)"
         }
     },
     {
@@ -80,8 +80,8 @@
             "de": "Schneedecke (Salzburg/Kärnten)"
         },
         "description": {
-            "en": "Snow Cover on the Johannisberg. (August)",
-            "de": "Schneedecke auf dem Johannisberg. (August)"
+            "en": "Snow Cover on the Johannisberg (August)",
+            "de": "Schneedecke auf dem Johannisberg (August)"
         }
     },
     {
@@ -97,8 +97,8 @@
             "de": "Johannisberg im Schwarz-Weiß (Salzburg/Kärnten)"
         },
         "description": {
-            "en": "Black and White View of Johannisberg from Oberwalderhütte. (August)",
-            "de": "Schwarz-Weiß-Ansicht des Johannisbergs von der Oberwalderhütte. (August)"
+            "en": "Black and White View of Johannisberg from Oberwalderhütte (August)",
+            "de": "Schwarz-Weiß-Ansicht des Johannisbergs von der Oberwalderhütte (August)"
         }
     },
     {
@@ -114,8 +114,8 @@
             "de": "Antonikreuz (Seckauer-Alpen)"
         },
         "description": {
-            "en": "Direction Seekaralm from Antonikreuz. (December)",
-            "de": "Richtung Seekaralm vom Antonikreuz. (Dezember)"
+            "en": "Direction Seekaralm from Antonikreuz (December)",
+            "de": "Richtung Seekaralm vom Antonikreuz (Dezember)"
         }
     },
     {
@@ -131,8 +131,8 @@
             "de": "Hinkareck (Seckauer-Alpen)"
         },
         "description": {
-            "en": "View of Hinkareck from Antonikreuz. (December)",
-            "de": "Blick auf Hinkareck vom Antonikreuz. (Dezember)"
+            "en": "View of Hinkareck from Antonikreuz (December)",
+            "de": "Blick auf Hinkareck vom Antonikreuz (Dezember)"
         }
     },
     {
@@ -148,8 +148,8 @@
             "de": "Großer Schober (Steiermark)"
         },
         "description": {
-            "en": "A view of Großer Schober from the other side of the valley, on Hinkareck. (March)",
-            "de": "Ein Blick auf den Großen Schober von der anderen Seite des Tals, auf dem Hinkareck. (März)"
+            "en": "A view of Großer Schober from the other side of the valley, on Hinkareck (March)",
+            "de": "Ein Blick auf den Großen Schober von der anderen Seite des Tals, auf dem Hinkareck (März)"
         }
     },
     {
@@ -188,23 +188,363 @@
     },
     {
         "id": 12,
-        "src": "Koralpe/großerspeikkogel.jpg",
-        "thumb": "Koralpe/großerspeikkogel.jpg",
+        "src": "Koralpe/großerspeikkogel_pontniger-alm_1.jpg",
+        "thumb": "Koralpe/großerspeikkogel_pontniger-alm_1.jpg",
         "location": "Koralpe",
         "season": "autumn",
         "activity": "hiking",
         "date": "2023-10-27",
         "alt": {
-            "en": "Großerspeikkogel (Karinthia)",
-            "de": "Großerspeikkogel (Kärnten)"
+            "en": "Großer Speikkogel from Pontniger Alm (Karinthia)",
+            "de": "Großer Speikkogel von Pontniger Alm (Kärnten)"
         },
         "description": {
-            "en": "View of the Großerspeikkogel summit in Karinthia with the weather station in the background. (October)",
-            "de": "Blick auf den Großerspeikkogel Gipfel in Kärnten mit der Wetterstation im Hintergrund. (Oktober)"
+            "en": "View of the Großer Speikkogel summit in Karinthia from the Pontniger Alm (October)",
+            "de": "Blick auf den Großer Speikkogel Gipfel in Kärnten von der Pontniger Alm (Oktober)"
         }
     },
     {
         "id": 13,
+        "src": "Koralpe/großerspeikkogel_pontniger-alm_2.jpg",
+        "thumb": "Koralpe/großerspeikkogel_pontniger-alm_2.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Großer Speikkogel from Pontniger Alm (Karinthia)",
+            "de": "Großer Speikkogel von Pontniger Alm (Kärnten)"
+        },
+        "description": {
+            "en": "View of the Großer Speikkogel summit in Karinthia from the Pontniger Alm (May)",
+            "de": "Blick auf den Großer Speikkogel Gipfel in Kärnten von der Pontniger Alm (Mai)"
+        }
+    },
+    {
+        "id": 14,
+        "src": "Koralpe/großerspeikkogel_pontniger-alm_3.jpg",
+        "thumb": "Koralpe/großerspeikkogel_pontniger-alm_3.jpg",
+        "location": "Koralpe",
+        "season": "autumn",
+        "activity": "hiking",
+        "date": "2023-10-27",
+        "alt": {
+            "en": "Großer Speikkogel from Pontniger Alm (Karinthia)",
+            "de": "Großer Speikkogel von Pontniger Alm (Kärnten)"
+        },
+        "description": {
+            "en": "View of the Großer Speikkogel summit in Karinthia from the Pontniger Alm (October)",
+            "de": "Blick auf den Großer Speikkogel Gipfel in Kärnten von der Pontniger Alm (Oktober)"
+        }
+    },            
+    {
+        "id": 15,
+        "src": "Koralpe/großerspeikkogel_below.jpg",
+        "thumb": "Koralpe/großerspeikkogel_below.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2023-10-27",
+        "alt": {
+            "en": "Großer Speikkogel (Karinthia)",
+            "de": "Großer Speikkogel (Kärnten)"
+        },
+        "description": {
+            "en": "View from below (Pontniger Alm side) of the Großer Speikkogel summit in Karinthia with the military radar station (Goldhaube for airspace monitoring) in the background (October)",
+            "de": "Blick von unten (Pontniger Alm Seite) auf den Großer Speikkogel Gipfel in Kärnten mit der Militär-Radarstation (Goldhaube für Luftraumüberwachung) im Hintergrund (Oktober)"
+        }
+    },
+    {
+        "id": 16,
+        "src": "Koralpe/großerspeikkogel_kreuz_1.jpg",
+        "thumb": "Koralpe/großerspeikkogel_kreuz_1.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Großer Speikkogel (Karinthia)",
+            "de": "Großer Speikkogel (Kärnten)"
+        },
+        "description": {
+            "en": "Großer Speikkogel summit in Karinthia looking towards the East. On the Left is Deutschlandsberg and on the right is Slovenia (May)",
+            "de": "Großer Speikkogel Gipfel in Kärnten mit Blick in den Osten. Links ist Deutschlandsberg und rechts ist Slowenien (Mai)"
+        }
+    },
+    {
+        "id": 17,
+        "src": "Koralpe/großerspeikkogel_gipfel-buch.jpg",
+        "thumb": "Koralpe/großerspeikkogel_gipfel-buch.jpg",
+        "location": "Koralpe",
+        "season": "autumn",
+        "activity": "hiking",
+        "date": "2023-10-27",
+        "alt": {
+            "en": "Großer Speikkogel (Karinthia)",
+            "de": "Großer Speikkogel (Kärnten)"
+        },
+        "description": {
+            "en": "Großer Speikkogel summit in Karinthia and its Summit Book looking towards the East. On the Left is Deutschlandsberg and on the right is Slovenia (October)",
+            "de": "Großer Speikkogel Gipfel in Kärnten und sein Gipfelbuch mit Blick in den Osten. Links ist Deutschlandsberg und rechts ist Slowenien (Oktober)"
+        }
+    },    
+    {
+        "id": 18,
+        "src": "Koralpe/großerspeikkogel_kreuz_2.jpg",
+        "thumb": "Koralpe/großerspeikkogel_kreuz_2.jpg",
+        "location": "Koralpe",
+        "season": "autumn",
+        "activity": "hiking",
+        "date": "2023-10-27",
+        "alt": {
+            "en": "Großer Speikkogel (Karinthia)",
+            "de": "Großer Speikkogel (Kärnten)"
+        },
+        "description": {
+            "en": "View of the Großer Speikkogel cross summit in Karinthia with the military radar station (Goldhaube for airspace monitoring) in the background (October)",
+            "de": "Blick auf den Großer Speikkogel Gipfelkreuz in Kärnten mit der Militär-Radarstation (Goldhaube für Luftraumüberwachung) im Hintergrund (Oktober)"
+        }
+    },
+    {
+        "id": 19,
+        "src": "Koralpe/großerspeikkogel_kreuz_3.jpg",
+        "thumb": "Koralpe/großerspeikkogel_kreuz_3.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Großer Speikkogel (Karinthia)",
+            "de": "Großer Speikkogel (Kärnten)"
+        },
+        "description": {
+            "en": "View of the Großer Speikkogel cross summit in Karinthia with the military radar station (Goldhaube for airspace monitoring) in the background (May)",
+            "de": "Blick auf den Großer Speikkogel Gipfelkreuz in Kärnten mit der Militär-Radarstation (Goldhaube für Luftraumüberwachung) im Hintergrund (Mai)"
+        }
+    },
+    {
+        "id": 20,
+        "src": "Koralpe/großerspeikkogel_kreuz_4.jpg",
+        "thumb": "Koralpe/großerspeikkogel_kreuz_4.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Großer Speikkogel (Karinthia)",
+            "de": "Großer Speikkogel (Kärnten)"
+        },
+        "description": {
+            "en": "View of the Großer Speikkogel cross summit in Karinthia, in direction of Seespitz, with the military radar station (Goldhaube for airspace monitoring) in the background (May)",
+            "de": "Blick auf den Großer Speikkogel Gipfelkreuz in Kärnten, in Richtung Seespitz, mit der Militär-Radarstation (Goldhaube für Luftraumüberwachung) im Hintergrund (Mai)"
+        }
+    },
+    {
+        "id": 21,
+        "src": "Koralpe/back_of_my_backpack.jpg",
+        "thumb": "Koralpe/back_of_my_backpack.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-22",
+        "alt": {
+            "en": "Eibiswald - Soboth (Styria)",
+            "de": "Eibiswald - Soboth (Steiermark)"
+        },
+        "description": {
+            "en": "Back of my backpack on the way to Soboth from Eibiswald (May)",
+            "de": "Rückseite meines Rucksacks auf dem Weg von Eibiswald nach Soboth (Mai)"
+        }
+    },    
+    {
+        "id": 22,
+        "src": "Koralpe/gasthof_mörth_curtains.jpg",
+        "thumb": "Koralpe/gasthof_mörth_curtains.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-22",
+        "alt": {
+            "en": "Soboth (Styria)",
+            "de": "Soboth (Steiermark)"
+        },
+        "description": {
+            "en": "Morning view of the curtains in a 2 person room at Gasthof Mörth in Soboth (May)",
+            "de": "Morgensicht auf die Vorhänge in einem 2-Personen-Raum im Gasthof Mörth in Soboth (Mai)"
+        }
+    },
+    {
+        "id": 23,
+        "src": "Koralpe/pontniger-alm.jpg",
+        "thumb": "Koralpe/pontniger-alm.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Pontniger Alm (Karinthia)",
+            "de": "Pontniger Alm (Kärnten)"
+        },
+        "description": {
+            "en": "View on Pontniger Alm - and a group of hikers - from Großer Speikkogel in Karinthia (May)",
+            "de": "Blick auf Pontniger Alm - und eine Gruppe von Wanderern - vom Großer Speikkogel in Kärnten (Mai)"
+        }
+    },    
+    {
+        "id": 24,
+        "src": "Koralpe/seespitz.jpg",
+        "thumb": "Koralpe/seespitz.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Seespitz (Karinthia)",
+            "de": "Seespitz (Kärnten)"
+        },
+        "description": {
+            "en": "Seespitz in Karinthia on the way to Grilliitschhütte (May)",
+            "de": "Blick auf Seespitz in Kärnten auf dem Weg zur Grilliitschhütte (Mai)"
+        }
+    },
+    {
+        "id": 25,
+        "src": "Koralpe/seespitz_moon_1.jpg",
+        "thumb": "Koralpe/seespitz_moon_1.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Seespitz (Karinthia)",
+            "de": "Seespitz (Kärnten)"
+        },
+        "description": {
+            "en": "Moon on the Seespitz (May)",
+            "de": "Mond auf dem Seespitz (Mai)"
+        }
+    },
+    {
+        "id": 26,
+        "src": "Koralpe/seespitz_moon_2.jpg",
+        "thumb": "Koralpe/seespitz_moon_2.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Seespitz (Karinthia)",
+            "de": "Seespitz (Kärnten)"
+        },
+        "description": {
+            "en": "Moon on the Seespitz (May)",
+            "de": "Mond auf dem Seespitz (Mai)"
+        }
+    },
+    {
+        "id": 27,
+        "src": "Koralpe/plain_in_sky.jpg",
+        "thumb": "Koralpe/plain_in_sky.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Seespitz (Karinthia)",
+            "de": "Seespitz (Kärnten)"
+        },
+        "description": {
+            "en": "Airplain in the sky on the Seespitz (May)",
+            "de": "Flugzeug am Himmel auf dem Seespitz (Mai)"
+        }
+    },
+    {
+        "id": 28,
+        "src": "Koralpe/lantern_grillitschhütte.jpg",
+        "thumb": "Koralpe/lantern_grillitschhütte.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Grillitschhütte (Karinthia)",
+            "de": "Grillitschhütte (Kärnten)"
+        },
+        "description": {
+            "en": "Lantern at the Grillitschhütte (May)",
+            "de": "Laterne an der Grillitschhütte (Mai)"
+        }
+    },
+    {
+        "id": 29,
+        "src": "Koralpe/sunset_grillitschhütte_1.jpg",
+        "thumb": "Koralpe/sunset_grillitschhütte_1.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Grillitschhütte (Karinthia)",
+            "de": "Grillitschhütte (Kärnten)"
+        },
+        "description": {
+            "en": "Sunset at the Grillitschhütte (May)",
+            "de": "Sonnenuntergang an der Grillitschhütte (Mai)"
+        }
+    },
+    {
+        "id": 30,
+        "src": "Koralpe/sunset_grillitschhütte_2.jpg",
+        "thumb": "Koralpe/sunset_grillitschhütte_2.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-23",
+        "alt": {
+            "en": "Grillitschhütte (Karinthia)",
+            "de": "Grillitschhütte (Kärnten)"
+        },
+        "description": {
+            "en": "Sunset at the Grillitschhütte (May)",
+            "de": "Sonnenuntergang an der Grillitschhütte (Mai)"
+        }
+    },
+    {
+        "id": 31,
+        "src": "Koralpe/weinebene_1.jpg",
+        "thumb": "Koralpe/weinebene_1.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-24",
+        "alt": {
+            "en": "Weinebene (Karinthia)",
+            "de": "Weinebene (Kärnten)"
+        },
+        "description": {
+            "en": "Weinebene looking towards Großer Speikkogel (May)",
+            "de": "Weinebene blickend auf den Großen Speikkogel (Mai)"
+        }
+    },
+    {
+        "id": 32,
+        "src": "Koralpe/weinebene_2.jpg",
+        "thumb": "Koralpe/weinebene_2.jpg",
+        "location": "Koralpe",
+        "season": "spring",
+        "activity": "hiking",
+        "date": "2026-05-24",
+        "alt": {
+            "en": "Weinebene (Karinthia)",
+            "de": "Weinebene (Kärnten)"
+        },
+        "description": {
+            "en": "Weinebene looking towards Handalm (May)",
+            "de": "Weinebene blickend auf den Handalm (Mai)"
+        }
+    },
+    {
+        "id": 33,
         "src": "Koralpe/handalm.jpg",
         "thumb": "Koralpe/handalm.jpg",
         "location": "Koralpe",
@@ -216,8 +556,8 @@
             "de": "Handalm (Steiermark)"
         },
         "description": {
-            "en": "View of the wind turbines on the Handalm in Styria. (October)",
-            "de": "Blick auf die Windkraftanlagen auf dem Handalm in Steiermark. (Oktober)"
+            "en": "View of the wind turbines on the Handalm in Styria (October)",
+            "de": "Blick auf die Windkraftanlagen auf dem Handalm in Steiermark (Oktober)"
         }
     }
 ]
