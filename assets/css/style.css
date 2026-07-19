@@ -226,7 +226,7 @@ p {
 
 .navbar__logo {
     font-family: var(--font-serif);
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: var(--text-primary);
     letter-spacing: 0.01em;
@@ -292,7 +292,7 @@ p {
     color: var(--text-secondary);
     cursor: pointer;
     font-family: var(--font-sans);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     padding: 0;
@@ -362,7 +362,7 @@ p {
 }
 
 .footer p {
-    font-size: 0.82rem;
+    font-size: 1rem;
     color: var(--text-secondary);
 }
 
