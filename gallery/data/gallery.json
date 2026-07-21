@@ -103,15 +103,15 @@
     },
     {
         "id": 7,
-        "src": "Seckauer-Alpen/antonikreuz.jpg",
-        "thumb": "Seckauer-Alpen/antonikreuz.jpg",
-        "location": "Seckauer-Alpen",
+        "src": "Eisenerzer-Alpen/antonikreuz.jpg",
+        "thumb": "Eisenerzer-Alpen/antonikreuz.jpg",
+        "location": "Eisenerzer-Alpen",
         "season": "winter",
         "activity": "hiking",
         "date": "2025-12-13",
         "alt": {
-            "en": "Antonikreuz (Seckauer-Alpen)",
-            "de": "Antonikreuz (Seckauer-Alpen)"
+            "en": "Antonikreuz (Eisenerzer Alpen/Styria)",
+            "de": "Antonikreuz (Eisenerzer Alpen/Steiermark)"
         },
         "description": {
             "en": "Direction Seekaralm from Antonikreuz (December)",
@@ -120,15 +120,15 @@
     },
     {
         "id": 8,
-        "src": "Seckauer-Alpen/hinkareck.jpg",
-        "thumb": "Seckauer-Alpen/hinkareck.jpg",
-        "location": "Seckauer-Alpen",
+        "src": "Eisenerzer-Alpen/hinkareck.jpg",
+        "thumb": "Eisenerzer-Alpen/hinkareck.jpg",
+        "location": "Eisenerzer-Alpen",
         "season": "winter",
         "activity": "hiking",
         "date": "2025-12-13",
         "alt": {
-            "en": "Hinkareck (Seckauer-Alpen)",
-            "de": "Hinkareck (Seckauer-Alpen)"
+            "en": "Hinkareck (Eisenerzer Alpen/Styria)",
+            "de": "Hinkareck (Eisenerzer Alpen/Steiermark)"
         },
         "description": {
             "en": "View of Hinkareck from Antonikreuz (December)",
@@ -139,13 +139,13 @@
         "id": 9,
         "src": "Seckauer-Alpen/großer-schober-von-hinkareck.jpg",
         "thumb": "Seckauer-Alpen/großer-schober-von-hinkareck.jpg",
-        "location": "Steiermark",
+        "location": "Seckauer-Alpen",
         "season": "winter",
         "activity": "hiking",
         "date": "2025-12-13",
         "alt": {
-            "en": "Großer Schober (Styria)",
-            "de": "Großer Schober (Steiermark)"
+            "en": "Großer Schober (Seckauer Alpen/Styria)",
+            "de": "Großer Schober (Seckauer Alpen/Steiermark)"
         },
         "description": {
             "en": "A view of Großer Schober from the other side of the valley, on Hinkareck (March)",
